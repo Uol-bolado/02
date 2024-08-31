@@ -1,0 +1,2667 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://fashionpeople.store/ -->
+<html lang="en" class="js fancybox-margin fancybox-lock"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fashion People">
+  <meta property="og:url" content="https://fashionpeople.store/">
+  <meta property="og:description" content="Loja online multimarca. Atualize o seu guarda-roupa com as nossas coleções das melhores marcas internacionais. Acompanhe as suas encomendas. Novos artigos diariamente. Entrega rápida. Suporte por telefone e email. Site para dispositivos móveis. Coleções e artigos exclusivos. Loja física em Felgueiras e Lousada.">
+
+<meta property="og:site_name" content="FashionPeople Store">
+
+
+
+  <meta name="twitter:card" content="summary">
+
+
+  <meta name="twitter:site" content="@">
+
+
+  <meta name="twitter:title" content="Fashion People">
+  <meta name="twitter:description" content="Loja online multimarca. Atualize o seu guarda-roupa com as nossas coleções das melhores marcas internacionais. Acompanhe as suas encomendas. Novos artigos diariamente. Entrega rápida. Suporte por telefone e email. Site para dispositivos móveis. Coleções e artigos exclusivos. Loja física em Felgueiras e Lousada.">
+
+
+
+  <!-- SEO
+================================================== -->
+
+  <title>
+    Fashion People
+  </title>
+  
+  <meta name="description" content="Loja online multimarca. Atualize o seu guarda-roupa com as nossas coleções das melhores marcas internacionais. Acompanhe as suas encomendas. Novos artigos diariamente. Entrega rápida. Suporte por telefone e email. Site para dispositivos móveis. Coleções e artigos exclusivos. Loja física em Felgueiras e Lousada.">
+  
+  <link rel="canonical" href="https://fashionpeople.store/">
+
+  <!-- CSS
+================================================== -->
+
+  <link href="./index_files/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+  <link href="./index_files/queries.css" rel="stylesheet" type="text/css" media="all">
+
+  <!-- JS
+================================================== -->
+
+  <script src="./index_files/all.js.transferir" async="" crossorigin="anonymous"></script><script id="facebook-jssdk" src="./index_files/all(1).js.transferir"></script><script type="text/javascript" async="" src="./index_files/trekkie.storefront.f9102b76c4156d18a2f9ad80e236ecd6fdcc057c.min.js.transferir"></script><script src="./index_files/jquery.min.js.transferir" type="text/javascript"></script>
+  <script src="./index_files/eventemitter3.min.js.transferir" type="text/javascript"></script>
+
+  
+    <script src="./index_files/currencies.js.transferir" type="text/javascript"></script>
+<script src="./index_files/jquery.currencies.min.js.transferir" type="text/javascript"></script>
+
+<script>
+
+Currency.format = 'money_with_currency_format';
+var shopCurrency = 'EUR';
+
+/* Sometimes merchants change their shop currency, let's tell our JavaScript file */
+Currency.moneyFormats[shopCurrency].money_with_currency_format = "€{{amount_with_comma_separator}} EUR";
+Currency.moneyFormats[shopCurrency].money_format = "€{{amount_with_comma_separator}}";
+
+/* Default currency */
+var defaultCurrency = 'EUR';
+
+/* Cookie currency */
+var cookieCurrency = Currency.cookie.read();
+
+$( document ).ready(function() {
+  /* Fix for customer account pages */
+  jQuery('span.money span.money').each(function() {
+    jQuery(this).parents('span.money').removeClass('money');
+  });
+
+  /* Saving the current price */
+  jQuery('span.money').each(function() {
+    jQuery(this).attr('data-currency-EUR', jQuery(this).html());
+  });
+
+  // If there's no cookie.
+  if (cookieCurrency == null) {
+    if (shopCurrency !== defaultCurrency) {
+      Currency.convertAll(shopCurrency, defaultCurrency);
+    }
+    else {
+      Currency.currentCurrency = defaultCurrency;
+    }
+  }
+  // If the cookie value does not correspond to any value in the currency dropdown.
+  else if (jQuery('[name=currencies]').size() && jQuery('[name=currencies] option[value=' + cookieCurrency + ']').size() === 0) {
+    Currency.currentCurrency = shopCurrency;
+    Currency.cookie.write(shopCurrency);
+  }
+  // If the cookie value is the same as the shop currency set in settings.
+  else if (cookieCurrency === shopCurrency) {
+    Currency.currentCurrency = shopCurrency;
+  }
+  // If the cookie currency is different than the shop currency.
+  else {
+    Currency.currentCurrency = cookieCurrency || EUR;
+  }
+
+  // Update (on load) the currency shown in currency picker to currentCurrrency.
+  jQuery('[name=currencies]').val(Currency.currentCurrency).change(function() {
+    var newCurrency = jQuery(this).val();
+
+    Currency.convertAll(Currency.currentCurrency, newCurrency);
+  });
+
+  // Convert all currencies with span.money to currentCurrrency on doc.ready load.
+  Currency.convertAll(shopCurrency, Currency.currentCurrency);
+});
+
+</script>
+
+  
+
+  <script src="./index_files/theme.js.transferir" type="text/javascript"></script>
+  <script src="./index_files/option_selection-86cdd286ddf3be7e25d68b9fc5965d7798a3ff6228ff79af67b3f4e41d6a34be.js.transferir" type="text/javascript"></script>
+  <script src="./index_files/instafeed.js.transferir" type="text/javascript"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="shortcut icon" href="https://fashionpeople.store/cdn/shop/files/FP-ico_32x32.png?v=1613682756" type="image/png">
+  
+  
+  <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/6189547604/digital_wallets/dialog">
+<meta name="shopify-checkout-api-token" content="f22d8676f35dc74d96608ef36300aac3">
+<meta id="in-context-paypal-metadata" data-shop-id="6189547604" data-venmo-supported="false" data-environment="production" data-locale="en_US" data-paypal-v4="true" data-currency="EUR">
+<script async="async" src="./index_files/preloads.js.transferir"></script>
+<script async="async" src="./index_files/preloads(1).js.transferir" crossorigin="anonymous"></script>
+<script id="shopify-features" type="application/json">{"accessToken":"f22d8676f35dc74d96608ef36300aac3","betas":["rich-media-storefront-analytics"],"domain":"fashionpeople.store","predictiveSearch":true,"shopId":6189547604,"smart_payment_buttons_url":"https:\/\/fashionpeople.store\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/spb.pt-pt.js","dynamic_checkout_cart_url":"https:\/\/fashionpeople.store\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.pt-pt.js","locale":"pt-pt"}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "fashionpeople-store.myshopify.com";
+Shopify.locale = "pt-PT";
+Shopify.currency = {"active":"EUR","rate":"1.0"};
+Shopify.country = "BR";
+Shopify.theme = {"name":"Icon","id":45498630228,"theme_store_id":686,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+Shopify.cdnHost = "fashionpeople.store/cdn";
+Shopify.routes = Shopify.routes || {};
+Shopify.routes.root = "/";</script>
+<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script id="shop-js-features" type="application/json">{"compact":true}</script>
+<script id="shop-js-analytics" type="application/json">{"pageType":"index"}</script>
+<script id="__st">var __st={"a":6189547604,"offset":3600,"reqid":"32772020-0645-4ed8-9ebf-0a6e0af5c193-1724684347","pageurl":"fashionpeople.store\/","u":"450344e18d67","p":"home"};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(',');function s(t,e,n=!1){try{const o=window.sessionStorage;for(const[n,c]of Object.entries(JSON.parse(o.getItem(e))))t.elements[n]&&(t.elements[n].value=c);n&&o.removeItem(e)}catch{}}const a='form_key',i=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response','password'],u=()=>{try{return window.sessionStorage}catch{return}},m=t=>t.elements[a],f='form_type',d='cptcha';function p(t){t.dataset[d]=!0}const l=window,h=l.document,_='Shopify',y='ce_forms',E='captcha';let v=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe','https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.4.0.iife.js',T={infoText:'Protegido por hCaptcha',privacyText:'Privacidade',termsText:'Termos'},(t,e,n)=>{const o=l[_][y],c=o.bindForm;if(c)return c(t,g,e,T).then(n);o.q.push([[t,g,e,T],n]),v||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:'https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.4.0.iife.js'})),v=!0)});var g,T;l[_]=l[_]||{},l[_][y]=l[_][y]||{},l[_][y].q=[],l[_][E]=l[_][E]||{},l[_][E].protect=function(t,e){n(t,void 0,e),p(t)},Object.freeze(l[_][E]),function(t,e,n,l,h,_){const[y,E,v,g]=function(t,e,n){const s=e?o:[],a=t?c:[],i=[...s,...a],u=[...o],m=r(i),f=r(s),d=n&&r(i.filter((([t,e])=>n.includes(e)))),p=r(u),l=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];return[l(m),l(f),l(d),l(p)]}(l,h,_),T=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},S=t=>y().includes(t);t.addEventListener('submit',(t=>{const e=T(t);if(!e)return;const n=S(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=m(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!u())return;!function(t){const e=u();if(!e)return;const n=m(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){m(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:a})),t.elements[a].value=e}(t,e),function(t,e){const n=u();if(!n)return;const o=[...t.querySelectorAll('input[type="password"]')].map((({name:t})=>t)),c=[...i,...o],r={};for(const[s,a]of new FormData(t).entries())c.includes(s)||(r[s]=a);n.setItem(e,JSON.stringify(r))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const w=(t,e)=>{t&&!t.dataset[d]&&(n(t,e.some((e=>e===t))),p(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=T(t);S(e)&&w(e,E())}));const A=e.get('form_key'),b=e.get(f),I=A&&b;t.addEventListener('DOMContentLoaded',(()=>{const t=E();if(I)for(const e of t)e.elements[f].value===b&&s(e,A);[...new Set([...v(),...y().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>w(e,t)))}))}(h,new URLSearchParams(l.location.search),n,!0,!0,['guest_login'])})()}();</script>
+<script id="captcha-terms">!function(){'use strict';const e=/recaptcha|reCATPCHA|google|Googl/gi,t=o=>{let c=o.firstChild;for(;c;)c.nodeType===Node.TEXT_NODE?c.textContent=c.textContent.replace(e,'hCaptcha'):c.nodeType===Node.ELEMENT_NODE&&t(c),c=c.nextSibling};document.addEventListener('DOMContentLoaded',(()=>{(e=>{const o=document.querySelector('p[data-spam-detection-disclaimer]');if(o){for(const e of['terms','privacy']){const t=o.querySelector(`a[href*='https://policies.google.com/${e}']`);t&&(t.href=`https://hcaptcha.com/${e}`)}t(o)}})()}))}();</script>
+<script integrity="sha256-n5Uet9jVOXPHGd4hH4B9Y6+BxkTluaaucmYaxAjUcvY=" data-source-attribution="shopify.loadfeatures" defer="defer" src="./index_files/load_feature-9f951eb7d8d53973c719de211f807d63af81c644e5b9a6ae72661ac408d472f6.js.transferir" crossorigin="anonymous"></script>
+<script integrity="sha256-HAs5a9TQVLlKuuHrahvWuke+s1UlxXohfHeoYv8G2D8=" data-source-attribution="shopify.dynamic-checkout" defer="defer" src="./index_files/features-1c0b396bd4d054b94abae1eb6a1bd6ba47beb35525c57a217c77a862ff06d83f.js.transferir" crossorigin="anonymous"></script>
+
+
+<style id="shopify-dynamic-checkout-cart">@media screen and (min-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 60px;
+  }
+}
+</style><script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+  <link rel="next" href="https://fashionpeople.store/next">
+  <link rel="prev" href="https://fashionpeople.store/prev">
+
+<meta property="og:image" content="https://cdn.shopify.com/s/files/1/0061/8954/7604/files/fp-3.png?height=628&amp;pad_color=ffffff&amp;v=1613681288&amp;width=1200">
+<meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/0061/8954/7604/files/fp-3.png?height=628&amp;pad_color=ffffff&amp;v=1613681288&amp;width=1200">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="628">
+<link href="https://monorail-edge.shopifysvc.com/" rel="dns-prefetch">
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 6189547604,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "index"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script id="web-pixels-manager-setup">(function e(e,n,a,t,r){var o="function"==typeof BigInt&&-1!==BigInt.toString().indexOf("[native code]")?"modern":"legacy";window.Shopify=window.Shopify||{};var i=window.Shopify;i.analytics=i.analytics||{};var s=i.analytics;s.replayQueue=[],s.publish=function(e,n,a){return s.replayQueue.push([e,n,a]),!0};try{self.performance.mark("wpm:start")}catch(e){}var l=[a,"/wpm","/b",r,o.substring(0,1),".js"].join("");!function(e){var n=e.src,a=e.async,t=void 0===a||a,r=e.onload,o=e.onerror,i=document.createElement("script"),s=document.head,l=document.body;i.async=t,i.src=n,r&&i.addEventListener("load",r),o&&i.addEventListener("error",o),s?s.appendChild(i):l?l.appendChild(i):console.error("Did not find a head or body element to append the script")}({src:l,async:!0,onload:function(){var a=window.webPixelsManager.init(e);n(a);var t=window.Shopify.analytics;t.replayQueue.forEach((function(e){var n=e[0],t=e[1],r=e[2];a.publishCustomEvent(n,t,r)})),t.replayQueue=[],t.publish=a.publishCustomEvent,t.visitor=a.visitor},onerror:function(){var n=e.storefrontBaseUrl.replace(/\/$/,""),a="".concat(n,"/.well-known/shopify/monorail/unstable/produce_batch"),r=JSON.stringify({metadata:{event_sent_at_ms:(new Date).getTime()},events:[{schema_id:"web_pixels_manager_load/3.1",payload:{version:t||"latest",bundle_target:o,page_url:self.location.href,status:"failed",surface:e.surface,error_msg:"".concat(l," has failed to load")},metadata:{event_created_at_ms:(new Date).getTime()}}]});try{if(self.navigator.sendBeacon.bind(self.navigator)(a,r))return!0}catch(e){}var i=new XMLHttpRequest;try{return i.open("POST",a,!0),i.setRequestHeader("Content-Type","text/plain"),i.send(r),!0}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")}return!1}})})({shopId: 6189547604,storefrontBaseUrl: "https://fashionpeople.store",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",surface: "storefront-renderer",enabledBetaFlags: ["5de24938","d04dc9f4","4735909c"],webPixelsConfigList: [{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0142","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0142","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],initData: {"shop":{"name":"FashionPeople Store","paymentSettings":{"currencyCode":"EUR"},"myshopifyDomain":"fashionpeople-store.myshopify.com","countryCode":"PT","storefrontUrl":"https:\/\/fashionpeople.store"},"customer":null,"cart":null,"checkout":null,"productVariants":[]},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed", {});},"https://fashionpeople.store/cdn","e245c016c278bd960efd5d6f260d3b33a74efb13","5d08cde3w4f259957pd2db89ecm09d01778",);</script><script async="" src="./index_files/b5d08cde3w4f259957pd2db89ecm09d01778m.js.transferir"></script>  <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+window.ShopifyAnalytics.meta.currency = 'EUR';
+var meta = {"page":{"pageType":"home"}};
+for (var attr in meta) {
+  window.ShopifyAnalytics.meta[attr] = meta[attr];
+}</script>
+<script>window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
+  
+};
+</script>
+<script class="analytics">(function () {
+    var customDocumentWrite = function(content) {
+      var jquery = null;
+
+      if (window.jQuery) {
+        jquery = window.jQuery;
+      } else if (window.Checkout && window.Checkout.$) {
+        jquery = window.Checkout.$;
+      }
+
+      if (jquery) {
+        jquery('body').append(content);
+      }
+    };
+
+    var hasLoggedConversion = function(token) {
+      if (token) {
+        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+      }
+      return false;
+    }
+
+    var setCookieIfConversion = function(token) {
+      if (token) {
+        var twoMonthsFromNow = new Date(Date.now());
+        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+      }
+    }
+
+    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+    if (trekkie.integrations) {
+      return;
+    }
+    trekkie.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+      'trackForm',
+      'trackLink'
+    ];
+    trekkie.factory = function(method) {
+      return function() {
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        trekkie.push(args);
+        return trekkie;
+      };
+    };
+    for (var i = 0; i < trekkie.methods.length; i++) {
+      var key = trekkie.methods[i];
+      trekkie[key] = trekkie.factory(key);
+    }
+    trekkie.load = function(config) {
+      trekkie.config = config || {};
+      trekkie.config.initialDocumentCookie = document.cookie;
+      var first = document.getElementsByTagName('script')[0];
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.onerror = function(e) {
+        var scriptFallback = document.createElement('script');
+        scriptFallback.type = 'text/javascript';
+        scriptFallback.onerror = function(error) {
+                var Monorail = {
+      produce: function produce(monorailDomain, schemaId, payload) {
+        var currentMs = new Date().getTime();
+        var event = {
+          schema_id: schemaId,
+          payload: payload,
+          metadata: {
+            event_created_at_ms: currentMs,
+            event_sent_at_ms: currentMs
+          }
+        };
+        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+      },
+      sendRequest: function sendRequest(endpointUrl, payload) {
+        // Try the sendBeacon API
+        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+          var blobData = new window.Blob([payload], {
+            type: 'text/plain'
+          });
+
+          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+            return true;
+          } // sendBeacon was not successful
+
+        } // XHR beacon
+
+        var xhr = new XMLHttpRequest();
+
+        try {
+          xhr.open('POST', endpointUrl);
+          xhr.setRequestHeader('Content-Type', 'text/plain');
+          xhr.send(payload);
+        } catch (e) {
+          console.log(e);
+        }
+
+        return false;
+      },
+      isIos12: function isIos12() {
+        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+      }
+    };
+    Monorail.produce('monorail-edge.shopifysvc.com',
+      'trekkie_storefront_load_errors/1.1',
+      {shop_id: 6189547604,
+      theme_id: 45498630228,
+      app_name: "storefront",
+      context_url: window.location.href,
+      source_url: "//fashionpeople.store/cdn/s/trekkie.storefront.f9102b76c4156d18a2f9ad80e236ecd6fdcc057c.min.js"});
+
+        };
+        scriptFallback.async = true;
+        scriptFallback.src = '//fashionpeople.store/cdn/s/trekkie.storefront.f9102b76c4156d18a2f9ad80e236ecd6fdcc057c.min.js';
+        first.parentNode.insertBefore(scriptFallback, first);
+      };
+      script.async = true;
+      script.src = '//fashionpeople.store/cdn/s/trekkie.storefront.f9102b76c4156d18a2f9ad80e236ecd6fdcc057c.min.js';
+      first.parentNode.insertBefore(script, first);
+    };
+    trekkie.load(
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":6189547604,"isMerchantRequest":null,"themeId":45498630228,"themeCityHash":"3176313154024369265","contentLanguage":"pt-PT","currency":"EUR"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["bbcf04e6"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+    );
+
+    var loaded = false;
+    trekkie.ready(function() {
+      if (loaded) return;
+      loaded = true;
+
+      window.ShopifyAnalytics.lib = window.trekkie;
+
+  
+      var originalDocumentWrite = document.write;
+      document.write = customDocumentWrite;
+      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+      document.write = originalDocumentWrite;
+
+      window.ShopifyAnalytics.lib.page(null,{"pageType":"home"});
+
+      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+      var token = match? match[1]: undefined;
+      if (!hasLoggedConversion(token)) {
+        setCookieIfConversion(token);
+        
+      }
+    });
+
+
+        var eventsListenerScript = document.createElement('script');
+        eventsListenerScript.async = true;
+        eventsListenerScript.src = "//fashionpeople.store/cdn/shopifycloud/shopify/assets/shop_events_listener-61fa9e0a912c675e178777d2b27f6cbd482f8912a6b0aa31fa3515985a8cd626.js";
+        document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+
+})();</script><script async="" src="./index_files/shop_events_listener-61fa9e0a912c675e178777d2b27f6cbd482f8912a6b0aa31fa3515985a8cd626.js.transferir"></script>
+<script class="boomerang">
+(function () {
+  if (window.BOOMR && (window.BOOMR.version || window.BOOMR.snippetExecuted)) {
+    return;
+  }
+  window.BOOMR = window.BOOMR || {};
+  window.BOOMR.snippetStart = new Date().getTime();
+  window.BOOMR.snippetExecuted = true;
+  window.BOOMR.snippetVersion = 12;
+  window.BOOMR.application = "storefront-renderer";
+  window.BOOMR.themeName = "Icon";
+  window.BOOMR.themeVersion = "6.5";
+  window.BOOMR.shopId = 6189547604;
+  window.BOOMR.themeId = 45498630228;
+  window.BOOMR.renderRegion = "gcp-europe-west4";
+  window.BOOMR.url =
+    "https://fashionpeople.store/cdn/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js";
+  var where = document.currentScript || document.getElementsByTagName("script")[0];
+  var parentNode = where.parentNode;
+  var promoted = false;
+  var LOADER_TIMEOUT = 3000;
+  function promote() {
+    if (promoted) {
+      return;
+    }
+    var script = document.createElement("script");
+    script.id = "boomr-scr-as";
+    script.src = window.BOOMR.url;
+    script.async = true;
+    parentNode.appendChild(script);
+    promoted = true;
+  }
+  function iframeLoader(wasFallback) {
+    promoted = true;
+    var dom, bootstrap, iframe, iframeStyle;
+    var doc = document;
+    var win = window;
+    window.BOOMR.snippetMethod = wasFallback ? "if" : "i";
+    bootstrap = function(parent, scriptId) {
+      var script = doc.createElement("script");
+      script.id = scriptId || "boomr-if-as";
+      script.src = window.BOOMR.url;
+      BOOMR_lstart = new Date().getTime();
+      parent = parent || doc.body;
+      parent.appendChild(script);
+    };
+    if (!window.addEventListener && window.attachEvent && navigator.userAgent.match(/MSIE [67]./)) {
+      window.BOOMR.snippetMethod = "s";
+      bootstrap(parentNode, "boomr-async");
+      return;
+    }
+    iframe = document.createElement("IFRAME");
+    iframe.src = "about:blank";
+    iframe.title = "";
+    iframe.role = "presentation";
+    iframe.loading = "eager";
+    iframeStyle = (iframe.frameElement || iframe).style;
+    iframeStyle.width = 0;
+    iframeStyle.height = 0;
+    iframeStyle.border = 0;
+    iframeStyle.display = "none";
+    parentNode.appendChild(iframe);
+    try {
+      win = iframe.contentWindow;
+      doc = win.document.open();
+    } catch (e) {
+      dom = document.domain;
+      iframe.src = "javascript:var d=document.open();d.domain='" + dom + "';void(0);";
+      win = iframe.contentWindow;
+      doc = win.document.open();
+    }
+    if (dom) {
+      doc._boomrl = function() {
+        this.domain = dom;
+        bootstrap();
+      };
+      doc.write("<body onload='document._boomrl();'>");
+    } else {
+      win._boomrl = function() {
+        bootstrap();
+      };
+      if (win.addEventListener) {
+        win.addEventListener("load", win._boomrl, false);
+      } else if (win.attachEvent) {
+        win.attachEvent("onload", win._boomrl);
+      }
+    }
+    doc.close();
+  }
+  var link = document.createElement("link");
+  if (link.relList &&
+    typeof link.relList.supports === "function" &&
+    link.relList.supports("preload") &&
+    ("as" in link)) {
+    window.BOOMR.snippetMethod = "p";
+    link.href = window.BOOMR.url;
+    link.rel = "preload";
+    link.as = "script";
+    link.addEventListener("load", promote);
+    link.addEventListener("error", function() {
+      iframeLoader(true);
+    });
+    setTimeout(function() {
+      if (!promoted) {
+        iframeLoader(true);
+      }
+    }, LOADER_TIMEOUT);
+    BOOMR_lstart = new Date().getTime();
+    parentNode.appendChild(link);
+  } else {
+    iframeLoader(false);
+  }
+  function boomerangSaveLoadTime(e) {
+    window.BOOMR_onload = (e && e.timeStamp) || new Date().getTime();
+  }
+  if (window.addEventListener) {
+    window.addEventListener("load", boomerangSaveLoadTime, false);
+  } else if (window.attachEvent) {
+    window.attachEvent("onload", boomerangSaveLoadTime);
+  }
+  if (document.addEventListener) {
+    document.addEventListener("onBoomerangLoaded", function(e) {
+      e.detail.BOOMR.init({
+        ResourceTiming: {
+          enabled: true,
+          trackedResourceTypes: ["script", "img", "css"]
+        },
+      });
+      e.detail.BOOMR.t_end = new Date().getTime();
+    });
+  } else if (document.attachEvent) {
+    document.attachEvent("onpropertychange", function(e) {
+      if (!e) e=event;
+      if (e.propertyName === "onBoomerangLoaded") {
+        e.detail.BOOMR.init({
+          ResourceTiming: {
+            enabled: true,
+            trackedResourceTypes: ["script", "img", "css"]
+          },
+        });
+        e.detail.BOOMR.t_end = new Date().getTime();
+      }
+    });
+  }
+})();</script><link href="./index_files/shopify-boomerang-1.0.0.min.js.transferir" rel="preload" as="script">
+<script defer="" src="./index_files/shopify-perf-kit-unstable.min.js.transferir" data-application="storefront-renderer" data-shop-id="6189547604" data-render-region="gcp-europe-west4" data-page-type="index" data-theme-instance-id="45498630228" data-monorail-region="shop_domain" data-resource-timing-sampling-rate="10"></script>
+<script id="boomr-scr-as" src="./index_files/shopify-boomerang-1.0.0.min.js.transferir" async=""></script><script type="text/javascript" src="./index_files/consent-tracking-api.js.transferir"></script><style type="text/css">.fancybox-margin{margin-right:17px;}</style><script id="instafeed-fetcher" src="./index_files/recent"></script><link rel="dns-prefetch preconnect" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.latest.pt-BR.cda433fb1a7421420975.js" crossorigin=""><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/6797.latest.pt-BR.ad0ee70b06bc9854ca6b.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/5817.latest.pt-BR.5b8f3a488f62c86e1062.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/5816.latest.pt-BR.62966691cce79d1ce69d.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.latest.pt-BR.6ba849dfb37c1cb66f2b.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/4100.latest.pt-BR.8e7cc044415897fd13ea.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/3147.latest.pt-BR.5cb97deead945b5bc3b3.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/794.latest.pt-BR.f8a7f2bbf7aef3e0f8bf.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/4328.latest.pt-BR.b9f972e2cdd9b69b3473.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/648.latest.pt-BR.2027ff23e985eaa03142.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/5455.latest.pt-BR.b46fd05b69e5027b2e12.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/8024.latest.pt-BR.6bcbecb2da9631843446.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/8217.latest.pt-BR.46b7dbd638857fb4ba10.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/OnePage.latest.pt-BR.5b3c9e76746ec7633021.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/6797.latest.pt-BR.4d537816ff9556bf1225.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.latest.pt-BR.8bb004feb2aa35e02d5d.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/6268.latest.pt-BR.65d1caae543e732fc236.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="image" href="https://cdn.shopify.com/s/files/1/0061/8954/7604/files/fp-3_x320.png?v=1613681288" crossorigin=""></head>
+
+<body class="gridlock shifter-left index shifter-enabled">
+  
+  <div id="CartDrawer" class="drawer drawer--right fancybox-margin">
+  <div class="drawer__header">
+    <div class="table-cell">
+    <h3>Cesto</h3>
+    </div>
+    <div class="table-cell">
+    <span class="drawer__close js-drawer-close">
+        Fechar cesto
+    </span>
+    </div>
+  </div>
+  <div id="CartContainer"></div>
+</div>
+
+  
+  <div class="shifter-page  is-moved-by-drawer" id="PageContainer"><div class="parallax-mirror fancybox-margin" style="visibility: hidden; z-index: 1; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 560px; width: 1903px;"><img class="parallax-slider" src="./index_files/SLIDER-4.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: 0px; height: 962px; width: 1903px; max-width: none;"></div>
+    <div id="shopify-section-header" class="shopify-section"><header class="scrollheader" data-section-id="header">
+  <div class="topbar gridlock-fluid">
+    <div class="row">
+
+      <div class=" desktop-12 tablet-6 mobile-3" id="banner-message">
+        
+          <a href="https://fashionpeople.store/">PORTES GRATUITOS EM COMPRAS SUPERIORES A 100€</a>
+        
+      </div>
+
+      
+      <!-- Shown on Mobile Only -->
+<ul id="cart" class="mobile-3 tablet-6 mobile-only">
+  <li>
+    <span class="shifter-handle">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </span>
+  </li>
+  <li class="seeks">
+    <a id="inline" href="https://fashionpeople.store/#search_popup" class="open_popup">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </a>
+    
+      <select class="currency-picker" name="currencies">
+  
+  
+  <option value="EUR" selected="selected">EUR</option>
+  
+    
+      <option value="INR">INR</option>
+    
+  
+    
+      <option value="GBP">GBP</option>
+    
+  
+    
+      <option value="CAD">CAD</option>
+    
+  
+    
+      <option value="AUD">AUD</option>
+    
+  
+    
+  
+    
+      <option value="JPY">JPY</option>
+    
+  
+</select>
+
+    
+  </li>
+  
+    <li class="cust">
+      
+        <a href="https://fashionpeople.store/account/login">
+          <i class="fa fa-user-o" aria-hidden="true"></i>
+        </a>
+      
+    </li>
+  
+  <li>
+    <a href="https://fashionpeople.store/cart" class="site-header__cart-toggle js-drawer-open-right" aria-controls="CartDrawer" aria-expanded="false">
+      <span class="cart-words">Cesto</span>
+      &nbsp;<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+      <span class="CartCount">0</span>
+    </a>
+  </li>
+</ul>
+
+    </div>
+  </div>
+  <div id="navigation" class="gridlock-fluid">
+    <div class="row">
+      <div class="nav-container desktop-12 tablet-6 mobile-3">
+        
+
+
+        <nav class=" nav-left desktop-5 tablet-1 ">
+          
+            <span class="shifter-handle">
+              <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            </span>
+          
+        </nav>
+
+        
+          <div id="logo" class="desktop-2 tablet-6 mobile-3">
+            
+<a href="https://fashionpeople.store/">
+                <img src="./index_files/fp-3_400x.png" itemprop="logo">
+              </a>
+            
+          </div>
+        
+
+        
+          <ul id="cart" class="desktop-5 tablet-3 mobile-hide right">
+
+            <li class="seeks">
+              <a id="inline" href="https://fashionpeople.store/#search_popup" class="open_popup">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </a>
+              
+              <select class="currency-picker" name="currencies">
+  
+  
+  <option value="EUR" selected="selected">EUR</option>
+  
+    
+      <option value="INR">INR</option>
+    
+  
+    
+      <option value="GBP">GBP</option>
+    
+  
+    
+      <option value="CAD">CAD</option>
+    
+  
+    
+      <option value="AUD">AUD</option>
+    
+  
+    
+  
+    
+      <option value="JPY">JPY</option>
+    
+  
+</select>
+
+              
+            </li>
+
+            
+              <li class="cust">
+                
+                  <a href="https://fashionpeople.store/account/login">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                  </a>
+                
+              </li>
+            
+            <li>
+              <a href="https://fashionpeople.store/cart" class="site-header__cart-toggle js-drawer-open-right" aria-controls="CartDrawer" aria-expanded="false">
+                <span class="cart-words"></span>
+        			&nbsp;<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                <span class="CartCount">0</span>
+                &nbsp;<span class="CartCost"><span class="money" data-currency-eur="€0,00" data-currency="EUR">€0,00</span></span>
+              </a>
+            </li>
+          </ul>
+        
+
+      </div>
+    </div>
+  </div>
+</header>
+<div id="phantom"></div>
+
+
+<style>
+  
+    @media screen and ( min-width: 740px ) {
+      #logo img { max-width: 240px; }
+    }
+  
+  
+  
+    header { border-bottom: 1px solid #e5e5e5; }
+  
+  
+    #logo { text-align: center !important; }
+    #logo a { float: none; }
+  
+  
+
+  
+    .topbar { text-align: center !important; }
+  
+  
+
+  .topbar {
+    font-size: 14px;
+  }
+  .topbar,
+  .topbar a {
+    color: #ffffff;
+  }
+  .topbar ul#cart li a {
+    font-size: 14px;
+  }
+  .topbar select.currency-picker {
+    font-size: 14px;
+  }
+  #logo a {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+</style>
+
+
+</div>
+    <div class="page-wrap">
+      
+      <div class="index-sections">
+  <!-- BEGIN content_for_index --><div id="shopify-section-1478800373635" class="shopify-section"><section class="home index-section homepage-section slideshow-section" data-section-id="1478800373635" data-section-type="slideshow-section">
+
+
+<!-- Start Flexslider Option -->
+
+  
+
+  <div class="flexslider" id="flexslider--1478800373635" data-speed="8000">
+    <ul class="slides">
+      
+        <li id="slide--1550776656423" class="slide--1550776656423 slide_image lazyload-fade lazyloaded" data-block-id="1550776656423" data-flexslider-index="0" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+
+          
+            
+              
+              
+
+              <div class="box-ratio" style="padding-bottom: 41.66666666666667%;">
+                <a href="https://fashionpeople.store/collections/fred-perry">
+                  <img class="slideshow__image slideshow__image--1550776656423 lazyload-fade lazyautosizes lazyloaded" data-sizes="auto" data-parent-fit="cover" alt="" draggable="false" data-srcset="//fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_180x.jpg?v=1720794897 180w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_360x.jpg?v=1720794897 360w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_540x.jpg?v=1720794897 540w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_720x.jpg?v=1720794897 720w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_900x.jpg?v=1720794897 900w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_1080x.jpg?v=1720794897 1080w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_1296x.jpg?v=1720794897 1296w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_1512x.jpg?v=1720794897 1512w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_1728x.jpg?v=1720794897 1728w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_1944x.jpg?v=1720794897 1944w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_2160x.jpg?v=1720794897 2160w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_2376x.jpg?v=1720794897 2376w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_2592x.jpg?v=1720794897 2592w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_2808x.jpg?v=1720794897 2808w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_3024x.jpg?v=1720794897 3024w" sizes="1903px" srcset="//fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_180x.jpg?v=1720794897 180w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_360x.jpg?v=1720794897 360w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_540x.jpg?v=1720794897 540w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_720x.jpg?v=1720794897 720w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_900x.jpg?v=1720794897 900w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_1080x.jpg?v=1720794897 1080w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_1296x.jpg?v=1720794897 1296w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_1512x.jpg?v=1720794897 1512w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_1728x.jpg?v=1720794897 1728w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_1944x.jpg?v=1720794897 1944w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_2160x.jpg?v=1720794897 2160w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_2376x.jpg?v=1720794897 2376w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_2592x.jpg?v=1720794897 2592w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_2808x.jpg?v=1720794897 2808w, //fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_3024x.jpg?v=1720794897 3024w">
+                </a>
+              </div>
+
+              <noscript>
+                <a href="/collections/fred-perry">
+                  <img src="//fashionpeople.store/cdn/shop/files/BANNER_SALDOS_FAUSTO_1024x.jpg?v=1720794897" alt="" class="slideshow__image slideshow__image--1550776656423">
+                </a>
+              </noscript>
+            
+          
+
+          
+
+          <div class="flex-caption slide-1550776656423">
+            <div class="caption-inners">
+              
+                <h2 class="slide-title">
+                  
+                </h2>
+              
+              
+                <p class="caption">
+                  
+                </p>
+              
+              
+                <div class="cta">
+                  <a href="https://fashionpeople.store/collections/fred-perry">
+                    
+                  </a>
+                </div>
+              
+            </div>
+          </div>
+        </li>
+
+        <style>
+          .slideshow__image--1550776656423 {
+            object-position: top center;
+            font-family: "object-fit: cover; object-position: top center;";
+          }
+          #shopify-section-1478800373635 .index-section {
+            padding-top: 0;
+            padding-bottom: 0;
+          }
+          
+          .flex-caption.slide-1550776656423 {
+            top: 60%;
+            text-align: left;
+          }
+
+          .flex-caption.slide-1550776656423 .caption-inners {
+            
+            
+            
+            
+              background: rgba(0, 0, 0, 0.1);
+            
+            display: inline-block;
+            padding: 10px 20px;
+          }
+
+          .flex-caption.slide-1550776656423 h2.slide-title {
+            color: rgba(0,0,0,0);
+          }
+          .flex-caption.slide-1550776656423 p {
+            color: rgba(0,0,0,0);
+          }
+          .flex-caption.slide-1550776656423 .cta a {
+            color: rgba(0,0,0,0);
+            background: rgba(0,0,0,0);
+          }
+          #flexslider--1478800373635 .flex-caption .cta a {
+            font-size: 14px;
+            font-weight: 700;
+          }
+          #flexslider--1478800373635 .flex-caption h2.slide-title {
+            font-size: 20px;
+            font-family: ;
+            font-weight:700;
+          }
+          #flexslider--1478800373635 .flex-caption p {
+            font-size: 13px;
+          }
+          .no-js .slide_image {
+            opacity: 1;
+          }
+        </style>
+      
+        <li id="slide--1550777262664" class="slide--1550777262664 slide_image lazyload-fade lazyloaded flex-active-slide" data-block-id="1550777262664" data-flexslider-index="1" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
+
+          
+            
+              
+              
+
+              <div class="box-ratio" style="padding-bottom: 41.66666666666667%;">
+                <a href="https://fashionpeople.store/collections/lacoste">
+                  <img class="slideshow__image slideshow__image--1550777262664 lazyload-fade lazyautosizes lazyloaded" data-sizes="auto" data-parent-fit="cover" alt="" draggable="false" data-srcset="//fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_180x.jpg?v=1710164365 180w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_360x.jpg?v=1710164365 360w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_540x.jpg?v=1710164365 540w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_720x.jpg?v=1710164365 720w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_900x.jpg?v=1710164365 900w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_1080x.jpg?v=1710164365 1080w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_1296x.jpg?v=1710164365 1296w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_1512x.jpg?v=1710164365 1512w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_1728x.jpg?v=1710164365 1728w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_1944x.jpg?v=1710164365 1944w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_2160x.jpg?v=1710164365 2160w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_2376x.jpg?v=1710164365 2376w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_2592x.jpg?v=1710164365 2592w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_2808x.jpg?v=1710164365 2808w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_3024x.jpg?v=1710164365 3024w" sizes="1903px" srcset="//fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_180x.jpg?v=1710164365 180w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_360x.jpg?v=1710164365 360w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_540x.jpg?v=1710164365 540w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_720x.jpg?v=1710164365 720w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_900x.jpg?v=1710164365 900w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_1080x.jpg?v=1710164365 1080w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_1296x.jpg?v=1710164365 1296w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_1512x.jpg?v=1710164365 1512w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_1728x.jpg?v=1710164365 1728w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_1944x.jpg?v=1710164365 1944w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_2160x.jpg?v=1710164365 2160w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_2376x.jpg?v=1710164365 2376w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_2592x.jpg?v=1710164365 2592w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_2808x.jpg?v=1710164365 2808w, //fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_3024x.jpg?v=1710164365 3024w">
+                </a>
+              </div>
+
+              <noscript>
+                <a href="/collections/lacoste">
+                  <img src="//fashionpeople.store/cdn/shop/files/lacoste_banner_ss24_1024x.jpg?v=1710164365" alt="" class="slideshow__image slideshow__image--1550777262664">
+                </a>
+              </noscript>
+            
+          
+
+          
+
+          <div class="flex-caption slide-1550777262664">
+            <div class="caption-inners">
+              
+                <h2 class="slide-title">
+                  Lacoste
+                </h2>
+              
+              
+                <p class="caption">
+                  New Collection SS'24
+                </p>
+              
+              
+                <div class="cta">
+                  <a href="https://fashionpeople.store/collections/lacoste">
+                    Ver Mais
+                  </a>
+                </div>
+              
+            </div>
+          </div>
+        </li>
+
+        <style>
+          .slideshow__image--1550777262664 {
+            object-position: top center;
+            font-family: "object-fit: cover; object-position: top center;";
+          }
+          #shopify-section-1478800373635 .index-section {
+            padding-top: 0;
+            padding-bottom: 0;
+          }
+          
+          .flex-caption.slide-1550777262664 {
+            top: 60%;
+            text-align: left;
+          }
+
+          .flex-caption.slide-1550777262664 .caption-inners {
+            
+            
+            
+            
+              background: rgba(255, 255, 255, 0.3);
+            
+            display: inline-block;
+            padding: 10px 20px;
+          }
+
+          .flex-caption.slide-1550777262664 h2.slide-title {
+            color: #000000;
+          }
+          .flex-caption.slide-1550777262664 p {
+            color: #000000;
+          }
+          .flex-caption.slide-1550777262664 .cta a {
+            color: #000000;
+            background: rgba(0,0,0,0);
+          }
+          #flexslider--1478800373635 .flex-caption .cta a {
+            font-size: 14px;
+            font-weight: 700;
+          }
+          #flexslider--1478800373635 .flex-caption h2.slide-title {
+            font-size: 20px;
+            font-family: ;
+            font-weight:700;
+          }
+          #flexslider--1478800373635 .flex-caption p {
+            font-size: 13px;
+          }
+          .no-js .slide_image {
+            opacity: 1;
+          }
+        </style>
+      
+        <li id="slide--1552336232661" class="slide--1552336232661 slide_image lazyload-fade lazyloaded" data-block-id="1552336232661" data-flexslider-index="2" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+
+          
+            
+              
+              
+
+              <div class="box-ratio" style="padding-bottom: 41.66666666666667%;">
+                <a href="https://fashionpeople.store/collections/iceberg">
+                  <img class="slideshow__image slideshow__image--1552336232661 lazyload-fade lazyautosizes lazyloaded" data-sizes="auto" data-parent-fit="cover" alt="" draggable="false" data-srcset="//fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_180x.jpg?v=1710164500 180w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_360x.jpg?v=1710164500 360w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_540x.jpg?v=1710164500 540w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_720x.jpg?v=1710164500 720w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_900x.jpg?v=1710164500 900w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_1080x.jpg?v=1710164500 1080w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_1296x.jpg?v=1710164500 1296w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_1512x.jpg?v=1710164500 1512w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_1728x.jpg?v=1710164500 1728w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_1944x.jpg?v=1710164500 1944w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_2160x.jpg?v=1710164500 2160w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_2376x.jpg?v=1710164500 2376w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_2592x.jpg?v=1710164500 2592w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_2808x.jpg?v=1710164500 2808w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_3024x.jpg?v=1710164500 3024w" sizes="1903px" srcset="//fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_180x.jpg?v=1710164500 180w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_360x.jpg?v=1710164500 360w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_540x.jpg?v=1710164500 540w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_720x.jpg?v=1710164500 720w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_900x.jpg?v=1710164500 900w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_1080x.jpg?v=1710164500 1080w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_1296x.jpg?v=1710164500 1296w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_1512x.jpg?v=1710164500 1512w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_1728x.jpg?v=1710164500 1728w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_1944x.jpg?v=1710164500 1944w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_2160x.jpg?v=1710164500 2160w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_2376x.jpg?v=1710164500 2376w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_2592x.jpg?v=1710164500 2592w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_2808x.jpg?v=1710164500 2808w, //fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_3024x.jpg?v=1710164500 3024w">
+                </a>
+              </div>
+
+              <noscript>
+                <a href="/collections/iceberg">
+                  <img src="//fashionpeople.store/cdn/shop/files/iceberg_banner_ss24_1024x.jpg?v=1710164500" alt="" class="slideshow__image slideshow__image--1552336232661">
+                </a>
+              </noscript>
+            
+          
+
+          
+
+          <div class="flex-caption slide-1552336232661">
+            <div class="caption-inners">
+              
+                <h2 class="slide-title">
+                  
+                </h2>
+              
+              
+                <p class="caption">
+                  
+                </p>
+              
+              
+                <div class="cta">
+                  <a href="https://fashionpeople.store/collections/iceberg">
+                    VER MAIS
+                  </a>
+                </div>
+              
+            </div>
+          </div>
+        </li>
+
+        <style>
+          .slideshow__image--1552336232661 {
+            object-position: top center;
+            font-family: "object-fit: cover; object-position: top center;";
+          }
+          #shopify-section-1478800373635 .index-section {
+            padding-top: 0;
+            padding-bottom: 0;
+          }
+          
+          .flex-caption.slide-1552336232661 {
+            top: 45%;
+            text-align: center;
+          }
+
+          .flex-caption.slide-1552336232661 .caption-inners {
+            
+            
+            
+            
+              background: transparent;
+            
+            display: inline-block;
+            padding: 10px 20px;
+          }
+
+          .flex-caption.slide-1552336232661 h2.slide-title {
+            color: rgba(0,0,0,0);
+          }
+          .flex-caption.slide-1552336232661 p {
+            color: rgba(0,0,0,0);
+          }
+          .flex-caption.slide-1552336232661 .cta a {
+            color: #000000;
+            background: rgba(0,0,0,0);
+          }
+          #flexslider--1478800373635 .flex-caption .cta a {
+            font-size: 14px;
+            font-weight: 700;
+          }
+          #flexslider--1478800373635 .flex-caption h2.slide-title {
+            font-size: 20px;
+            font-family: ;
+            font-weight:700;
+          }
+          #flexslider--1478800373635 .flex-caption p {
+            font-size: 13px;
+          }
+          .no-js .slide_image {
+            opacity: 1;
+          }
+        </style>
+      
+    </ul>
+  <ul class="flex-direction-nav"><li class="flex-nav-prev"><a class="flex-prev" href="https://fashionpeople.store/#"></a></li><li class="flex-nav-next"><a class="flex-next" href="https://fashionpeople.store/#"></a></li></ul></div>
+
+
+</section>
+<div class="clear"></div>
+
+
+
+</div><div id="shopify-section-1518209628906" class="shopify-section"><section class="homepage-featured-collection-1518209628906 homepage-products index-section" data-section-id="1518209628906">
+  <div class="section-title row">
+    <h2>
+      <a href="https://fashionpeople.store/collections/scotch-soda">
+        Novidades
+      </a>
+    </h2>
+  </div>
+  
+
+  <div class="row">
+
+    
+
+      
+
+      <article class="product-loop">
+        
+          <div class="product desktop-3 tablet-2 mobile-half mobile-half" id="prod-8781193314650" data-alpha="Sapato" data-price="9400">
+            <div class="ci">
+  
+    
+      
+    
+      
+    
+      
+    
+
+    
+
+  
+
+    
+      <a href="https://fashionpeople.store/collections/scotch-soda/products/sapato" title="Sapato">
+        <div class="reveal">
+          
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload-fade lazyautosizes lazyloaded" id="" data-sizes="auto" alt="Sapato" data-srcset="//fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_180x.jpg?v=1709117769 180w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_360x.jpg?v=1709117769 360w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_540x.jpg?v=1709117769 540w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_720x.jpg?v=1709117769 720w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_900x.jpg?v=1709117769 900w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_1080x.jpg?v=1709117769 1080w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_1296x.jpg?v=1709117769 1296w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_1512x.jpg?v=1709117769 1512w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_1728x.jpg?v=1709117769 1728w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_1944x.jpg?v=1709117769 1944w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_2160x.jpg?v=1709117769 2160w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_2376x.jpg?v=1709117769 2376w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_2592x.jpg?v=1709117769 2592w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_2808x.jpg?v=1709117769 2808w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_3024x.jpg?v=1709117769 3024w" sizes="275px" srcset="//fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_180x.jpg?v=1709117769 180w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_360x.jpg?v=1709117769 360w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_540x.jpg?v=1709117769 540w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_720x.jpg?v=1709117769 720w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_900x.jpg?v=1709117769 900w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_1080x.jpg?v=1709117769 1080w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_1296x.jpg?v=1709117769 1296w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_1512x.jpg?v=1709117769 1512w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_1728x.jpg?v=1709117769 1728w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_1944x.jpg?v=1709117769 1944w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_2160x.jpg?v=1709117769 2160w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_2376x.jpg?v=1709117769 2376w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_2592x.jpg?v=1709117769 2592w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_2808x.jpg?v=1709117769 2808w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_3024x.jpg?v=1709117769 3024w">
+  </div>
+          <noscript>
+            <img src="//fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_0b85bdb7-be34-4df1-be8d-dea14af05c34_1024x.jpg?v=1709117769" alt="Sapato">
+          </noscript>
+
+          
+            <div class="hidden">
+              
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload-fade lazyautosizes lazyloaded" id="" data-sizes="auto" alt="Sapato" data-srcset="//fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_180x.jpg?v=1709117769 180w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_360x.jpg?v=1709117769 360w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_540x.jpg?v=1709117769 540w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_720x.jpg?v=1709117769 720w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_900x.jpg?v=1709117769 900w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_1080x.jpg?v=1709117769 1080w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_1296x.jpg?v=1709117769 1296w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_1512x.jpg?v=1709117769 1512w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_1728x.jpg?v=1709117769 1728w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_1944x.jpg?v=1709117769 1944w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_2160x.jpg?v=1709117769 2160w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_2376x.jpg?v=1709117769 2376w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_2592x.jpg?v=1709117769 2592w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_2808x.jpg?v=1709117769 2808w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_3024x.jpg?v=1709117769 3024w" sizes="275px" srcset="//fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_180x.jpg?v=1709117769 180w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_360x.jpg?v=1709117769 360w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_540x.jpg?v=1709117769 540w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_720x.jpg?v=1709117769 720w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_900x.jpg?v=1709117769 900w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_1080x.jpg?v=1709117769 1080w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_1296x.jpg?v=1709117769 1296w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_1512x.jpg?v=1709117769 1512w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_1728x.jpg?v=1709117769 1728w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_1944x.jpg?v=1709117769 1944w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_2160x.jpg?v=1709117769 2160w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_2376x.jpg?v=1709117769 2376w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_2592x.jpg?v=1709117769 2592w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_2808x.jpg?v=1709117769 2808w, //fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_3024x.jpg?v=1709117769 3024w">
+  </div>
+              <noscript>
+                <img src="//fashionpeople.store/cdn/shop/files/66_f1265a34-ce4d-4de8-adc4-2c6012c4f7d2_1024x.jpg?v=1709117769" alt="Sapato">
+              </noscript>
+            </div>
+          
+        </div>
+      </a></div>
+
+  
+    <div class="product-info">
+      <a class="fancybox.ajax product-modal" rel="nofollow" href="https://fashionpeople.store/products/sapato?view=quick">
+        Vista rápida
+      </a>
+    </div>
+  
+
+<div class="product-details">
+  <a href="https://fashionpeople.store/collections/scotch-soda/products/sapato">
+    <h3>Sapato</h3>
+    
+      <h4>Scotch &amp; Soda</h4>
+    
+  </a>
+
+  <div class="price">
+    
+      <div class="prod-price">
+        
+          <span class="money" data-currency-eur="€94,00" data-currency="EUR">€94,00</span>
+        
+      </div>
+    
+  </div>
+
+</div>
+
+          </div>
+        
+          <div class="product desktop-3 tablet-2 mobile-half mobile-half" id="prod-8781191807322" data-alpha="Camisola" data-price="8690">
+            <div class="ci">
+  
+    
+      
+    
+      
+    
+      
+    
+
+    
+
+  
+
+    
+      <a href="https://fashionpeople.store/collections/scotch-soda/products/camisola-186" title="Camisola">
+        <div class="reveal">
+          
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload-fade lazyautosizes lazyloaded" id="" data-sizes="auto" alt="Camisola" data-srcset="//fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_180x.jpg?v=1709117657 180w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_360x.jpg?v=1709117657 360w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_540x.jpg?v=1709117657 540w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_720x.jpg?v=1709117657 720w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_900x.jpg?v=1709117657 900w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_1080x.jpg?v=1709117657 1080w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_1296x.jpg?v=1709117657 1296w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_1512x.jpg?v=1709117657 1512w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_1728x.jpg?v=1709117657 1728w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_1944x.jpg?v=1709117657 1944w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_2160x.jpg?v=1709117657 2160w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_2376x.jpg?v=1709117657 2376w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_2592x.jpg?v=1709117657 2592w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_2808x.jpg?v=1709117657 2808w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_3024x.jpg?v=1709117657 3024w" sizes="275px" srcset="//fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_180x.jpg?v=1709117657 180w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_360x.jpg?v=1709117657 360w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_540x.jpg?v=1709117657 540w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_720x.jpg?v=1709117657 720w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_900x.jpg?v=1709117657 900w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_1080x.jpg?v=1709117657 1080w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_1296x.jpg?v=1709117657 1296w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_1512x.jpg?v=1709117657 1512w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_1728x.jpg?v=1709117657 1728w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_1944x.jpg?v=1709117657 1944w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_2160x.jpg?v=1709117657 2160w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_2376x.jpg?v=1709117657 2376w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_2592x.jpg?v=1709117657 2592w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_2808x.jpg?v=1709117657 2808w, //fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_3024x.jpg?v=1709117657 3024w">
+  </div>
+          <noscript>
+            <img src="//fashionpeople.store/cdn/shop/files/33_4659b31c-26b3-4705-9df7-036ecf9d548a_1024x.jpg?v=1709117657" alt="Camisola">
+          </noscript>
+
+          
+            <div class="hidden">
+              
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload-fade lazyautosizes lazyloaded" id="" data-sizes="auto" alt="Camisola" data-srcset="//fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_180x.jpg?v=1709117656 180w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_360x.jpg?v=1709117656 360w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_540x.jpg?v=1709117656 540w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_720x.jpg?v=1709117656 720w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_900x.jpg?v=1709117656 900w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_1080x.jpg?v=1709117656 1080w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_1296x.jpg?v=1709117656 1296w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_1512x.jpg?v=1709117656 1512w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_1728x.jpg?v=1709117656 1728w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_1944x.jpg?v=1709117656 1944w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_2160x.jpg?v=1709117656 2160w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_2376x.jpg?v=1709117656 2376w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_2592x.jpg?v=1709117656 2592w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_2808x.jpg?v=1709117656 2808w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_3024x.jpg?v=1709117656 3024w" sizes="275px" srcset="//fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_180x.jpg?v=1709117656 180w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_360x.jpg?v=1709117656 360w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_540x.jpg?v=1709117656 540w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_720x.jpg?v=1709117656 720w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_900x.jpg?v=1709117656 900w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_1080x.jpg?v=1709117656 1080w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_1296x.jpg?v=1709117656 1296w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_1512x.jpg?v=1709117656 1512w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_1728x.jpg?v=1709117656 1728w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_1944x.jpg?v=1709117656 1944w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_2160x.jpg?v=1709117656 2160w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_2376x.jpg?v=1709117656 2376w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_2592x.jpg?v=1709117656 2592w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_2808x.jpg?v=1709117656 2808w, //fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_3024x.jpg?v=1709117656 3024w">
+  </div>
+              <noscript>
+                <img src="//fashionpeople.store/cdn/shop/files/22_b373f2e1-2c7b-4db6-bcb3-c770704e2d34_1024x.jpg?v=1709117656" alt="Camisola">
+              </noscript>
+            </div>
+          
+        </div>
+      </a></div>
+
+  
+    <div class="product-info">
+      <a class="fancybox.ajax product-modal" rel="nofollow" href="https://fashionpeople.store/products/camisola-186?view=quick">
+        Vista rápida
+      </a>
+    </div>
+  
+
+<div class="product-details">
+  <a href="https://fashionpeople.store/collections/scotch-soda/products/camisola-186">
+    <h3>Camisola</h3>
+    
+      <h4>Scotch &amp; Soda</h4>
+    
+  </a>
+
+  <div class="price">
+    
+      <div class="prod-price">
+        
+          <span class="money" data-currency-eur="€86,90" data-currency="EUR">€86,90</span>
+        
+      </div>
+    
+  </div>
+
+</div>
+
+          </div>
+        
+          <div class="product desktop-3 tablet-2 mobile-half mobile-half" id="prod-8781191250266" data-alpha="Cinto" data-price="5430">
+            <div class="ci">
+  
+    
+      
+    
+      
+    
+      
+    
+
+    
+
+  
+
+    
+      <a href="https://fashionpeople.store/collections/scotch-soda/products/cinto-17" title="Cinto">
+        <div class="reveal">
+          
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload-fade lazyautosizes lazyloaded" id="" data-sizes="auto" alt="Cinto" data-srcset="//fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_180x.jpg?v=1709117604 180w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_360x.jpg?v=1709117604 360w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_540x.jpg?v=1709117604 540w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_720x.jpg?v=1709117604 720w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_900x.jpg?v=1709117604 900w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_1080x.jpg?v=1709117604 1080w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_1296x.jpg?v=1709117604 1296w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_1512x.jpg?v=1709117604 1512w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_1728x.jpg?v=1709117604 1728w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_1944x.jpg?v=1709117604 1944w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_2160x.jpg?v=1709117604 2160w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_2376x.jpg?v=1709117604 2376w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_2592x.jpg?v=1709117604 2592w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_2808x.jpg?v=1709117604 2808w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_3024x.jpg?v=1709117604 3024w" sizes="275px" srcset="//fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_180x.jpg?v=1709117604 180w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_360x.jpg?v=1709117604 360w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_540x.jpg?v=1709117604 540w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_720x.jpg?v=1709117604 720w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_900x.jpg?v=1709117604 900w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_1080x.jpg?v=1709117604 1080w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_1296x.jpg?v=1709117604 1296w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_1512x.jpg?v=1709117604 1512w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_1728x.jpg?v=1709117604 1728w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_1944x.jpg?v=1709117604 1944w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_2160x.jpg?v=1709117604 2160w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_2376x.jpg?v=1709117604 2376w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_2592x.jpg?v=1709117604 2592w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_2808x.jpg?v=1709117604 2808w, //fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_3024x.jpg?v=1709117604 3024w">
+  </div>
+          <noscript>
+            <img src="//fashionpeople.store/cdn/shop/files/22_7a91adb4-61d2-4b42-b118-82aba41ee982_1024x.jpg?v=1709117604" alt="Cinto">
+          </noscript>
+
+          
+            <div class="hidden">
+              
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload-fade lazyautosizes lazyloaded" id="" data-sizes="auto" alt="Cinto" data-srcset="//fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_180x.jpg?v=1709117603 180w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_360x.jpg?v=1709117603 360w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_540x.jpg?v=1709117603 540w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_720x.jpg?v=1709117603 720w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_900x.jpg?v=1709117603 900w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_1080x.jpg?v=1709117603 1080w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_1296x.jpg?v=1709117603 1296w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_1512x.jpg?v=1709117603 1512w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_1728x.jpg?v=1709117603 1728w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_1944x.jpg?v=1709117603 1944w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_2160x.jpg?v=1709117603 2160w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_2376x.jpg?v=1709117603 2376w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_2592x.jpg?v=1709117603 2592w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_2808x.jpg?v=1709117603 2808w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_3024x.jpg?v=1709117603 3024w" sizes="275px" srcset="//fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_180x.jpg?v=1709117603 180w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_360x.jpg?v=1709117603 360w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_540x.jpg?v=1709117603 540w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_720x.jpg?v=1709117603 720w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_900x.jpg?v=1709117603 900w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_1080x.jpg?v=1709117603 1080w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_1296x.jpg?v=1709117603 1296w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_1512x.jpg?v=1709117603 1512w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_1728x.jpg?v=1709117603 1728w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_1944x.jpg?v=1709117603 1944w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_2160x.jpg?v=1709117603 2160w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_2376x.jpg?v=1709117603 2376w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_2592x.jpg?v=1709117603 2592w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_2808x.jpg?v=1709117603 2808w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_3024x.jpg?v=1709117603 3024w">
+  </div>
+              <noscript>
+                <img src="//fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_da0c3815-a9ee-48c7-b830-1a54bc97f121_1024x.jpg?v=1709117603" alt="Cinto">
+              </noscript>
+            </div>
+          
+        </div>
+      </a></div>
+
+  
+    <div class="product-info">
+      <a class="fancybox.ajax product-modal" rel="nofollow" href="https://fashionpeople.store/products/cinto-17?view=quick">
+        Vista rápida
+      </a>
+    </div>
+  
+
+<div class="product-details">
+  <a href="https://fashionpeople.store/collections/scotch-soda/products/cinto-17">
+    <h3>Cinto</h3>
+    
+      <h4>Scotch &amp; Soda</h4>
+    
+  </a>
+
+  <div class="price">
+    
+      <div class="prod-price">
+        
+          <span class="money" data-currency-eur="€54,30" data-currency="EUR">€54,30</span>
+        
+      </div>
+    
+  </div>
+
+</div>
+
+          </div>
+        
+          <div class="product desktop-3 tablet-2 mobile-half mobile-half" id="prod-8781190037850" data-alpha="Camisa" data-price="11950">
+            <div class="ci">
+  
+    
+      
+    
+      
+    
+      
+    
+
+    
+
+  
+
+    
+      <a href="https://fashionpeople.store/collections/scotch-soda/products/camisa-153" title="Camisa">
+        <div class="reveal">
+          
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload-fade lazyautosizes lazyloaded" id="" data-sizes="auto" alt="Camisa" data-srcset="//fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_180x.jpg?v=1709117545 180w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_360x.jpg?v=1709117545 360w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_540x.jpg?v=1709117545 540w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_720x.jpg?v=1709117545 720w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_900x.jpg?v=1709117545 900w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1080x.jpg?v=1709117545 1080w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1296x.jpg?v=1709117545 1296w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1512x.jpg?v=1709117545 1512w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1728x.jpg?v=1709117545 1728w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1944x.jpg?v=1709117545 1944w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_2160x.jpg?v=1709117545 2160w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_2376x.jpg?v=1709117545 2376w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_2592x.jpg?v=1709117545 2592w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_2808x.jpg?v=1709117545 2808w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_3024x.jpg?v=1709117545 3024w" sizes="275px" srcset="//fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_180x.jpg?v=1709117545 180w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_360x.jpg?v=1709117545 360w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_540x.jpg?v=1709117545 540w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_720x.jpg?v=1709117545 720w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_900x.jpg?v=1709117545 900w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1080x.jpg?v=1709117545 1080w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1296x.jpg?v=1709117545 1296w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1512x.jpg?v=1709117545 1512w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1728x.jpg?v=1709117545 1728w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1944x.jpg?v=1709117545 1944w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_2160x.jpg?v=1709117545 2160w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_2376x.jpg?v=1709117545 2376w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_2592x.jpg?v=1709117545 2592w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_2808x.jpg?v=1709117545 2808w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_3024x.jpg?v=1709117545 3024w">
+  </div>
+          <noscript>
+            <img src="//fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1024x.jpg?v=1709117545" alt="Camisa">
+          </noscript>
+
+          
+            <div class="hidden">
+              
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload-fade lazyautosizes lazyloaded" id="" data-sizes="auto" alt="Camisa" data-srcset="//fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_180x.jpg?v=1709117545 180w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_360x.jpg?v=1709117545 360w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_540x.jpg?v=1709117545 540w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_720x.jpg?v=1709117545 720w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_900x.jpg?v=1709117545 900w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_1080x.jpg?v=1709117545 1080w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_1296x.jpg?v=1709117545 1296w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_1512x.jpg?v=1709117545 1512w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_1728x.jpg?v=1709117545 1728w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_1944x.jpg?v=1709117545 1944w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_2160x.jpg?v=1709117545 2160w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_2376x.jpg?v=1709117545 2376w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_2592x.jpg?v=1709117545 2592w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_2808x.jpg?v=1709117545 2808w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_3024x.jpg?v=1709117545 3024w" sizes="275px" srcset="//fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_180x.jpg?v=1709117545 180w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_360x.jpg?v=1709117545 360w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_540x.jpg?v=1709117545 540w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_720x.jpg?v=1709117545 720w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_900x.jpg?v=1709117545 900w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_1080x.jpg?v=1709117545 1080w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_1296x.jpg?v=1709117545 1296w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_1512x.jpg?v=1709117545 1512w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_1728x.jpg?v=1709117545 1728w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_1944x.jpg?v=1709117545 1944w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_2160x.jpg?v=1709117545 2160w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_2376x.jpg?v=1709117545 2376w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_2592x.jpg?v=1709117545 2592w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_2808x.jpg?v=1709117545 2808w, //fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_3024x.jpg?v=1709117545 3024w">
+  </div>
+              <noscript>
+                <img src="//fashionpeople.store/cdn/shop/files/scotch---soda-176837-long-sleeve-shirt_1_1024x.jpg?v=1709117545" alt="Camisa">
+              </noscript>
+            </div>
+          
+        </div>
+      </a></div>
+
+  
+    <div class="product-info">
+      <a class="fancybox.ajax product-modal" rel="nofollow" href="https://fashionpeople.store/products/camisa-153?view=quick">
+        Vista rápida
+      </a>
+    </div>
+  
+
+<div class="product-details">
+  <a href="https://fashionpeople.store/collections/scotch-soda/products/camisa-153">
+    <h3>Camisa</h3>
+    
+      <h4>Scotch &amp; Soda</h4>
+    
+  </a>
+
+  <div class="price">
+    
+      <div class="prod-price">
+        
+          <span class="money" data-currency-eur="€119,50" data-currency="EUR">€119,50</span>
+        
+      </div>
+    
+  </div>
+
+</div>
+
+          </div>
+        
+          <div class="product desktop-3 tablet-2 mobile-half mobile-half" id="prod-8781189742938" data-alpha="Camisa" data-price="11950">
+            <div class="ci">
+  
+    
+      
+    
+      
+    
+      
+    
+
+    
+
+  
+
+    
+      <a href="https://fashionpeople.store/collections/scotch-soda/products/camisa-152" title="Camisa">
+        <div class="reveal">
+          
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload-fade lazyautosizes lazyloaded" id="" data-sizes="auto" alt="Camisa" data-srcset="//fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_180x.jpg?v=1709117520 180w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_360x.jpg?v=1709117520 360w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_540x.jpg?v=1709117520 540w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_720x.jpg?v=1709117520 720w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_900x.jpg?v=1709117520 900w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1080x.jpg?v=1709117520 1080w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1296x.jpg?v=1709117520 1296w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1512x.jpg?v=1709117520 1512w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1728x.jpg?v=1709117520 1728w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1944x.jpg?v=1709117520 1944w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_2160x.jpg?v=1709117520 2160w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_2376x.jpg?v=1709117520 2376w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_2592x.jpg?v=1709117520 2592w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_2808x.jpg?v=1709117520 2808w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_3024x.jpg?v=1709117520 3024w" sizes="275px" srcset="//fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_180x.jpg?v=1709117520 180w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_360x.jpg?v=1709117520 360w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_540x.jpg?v=1709117520 540w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_720x.jpg?v=1709117520 720w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_900x.jpg?v=1709117520 900w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1080x.jpg?v=1709117520 1080w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1296x.jpg?v=1709117520 1296w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1512x.jpg?v=1709117520 1512w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1728x.jpg?v=1709117520 1728w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1944x.jpg?v=1709117520 1944w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_2160x.jpg?v=1709117520 2160w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_2376x.jpg?v=1709117520 2376w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_2592x.jpg?v=1709117520 2592w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_2808x.jpg?v=1709117520 2808w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_3024x.jpg?v=1709117520 3024w">
+  </div>
+          <noscript>
+            <img src="//fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1024x.jpg?v=1709117520" alt="Camisa">
+          </noscript>
+
+          
+            <div class="hidden">
+              
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload-fade lazyautosizes lazyloaded" id="" data-sizes="auto" alt="Camisa" data-srcset="//fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_180x.jpg?v=1709117519 180w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_360x.jpg?v=1709117519 360w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_540x.jpg?v=1709117519 540w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_720x.jpg?v=1709117519 720w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_900x.jpg?v=1709117519 900w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_1080x.jpg?v=1709117519 1080w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_1296x.jpg?v=1709117519 1296w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_1512x.jpg?v=1709117519 1512w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_1728x.jpg?v=1709117519 1728w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_1944x.jpg?v=1709117519 1944w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_2160x.jpg?v=1709117519 2160w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_2376x.jpg?v=1709117519 2376w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_2592x.jpg?v=1709117519 2592w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_2808x.jpg?v=1709117519 2808w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_3024x.jpg?v=1709117519 3024w" sizes="275px" srcset="//fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_180x.jpg?v=1709117519 180w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_360x.jpg?v=1709117519 360w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_540x.jpg?v=1709117519 540w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_720x.jpg?v=1709117519 720w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_900x.jpg?v=1709117519 900w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_1080x.jpg?v=1709117519 1080w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_1296x.jpg?v=1709117519 1296w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_1512x.jpg?v=1709117519 1512w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_1728x.jpg?v=1709117519 1728w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_1944x.jpg?v=1709117519 1944w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_2160x.jpg?v=1709117519 2160w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_2376x.jpg?v=1709117519 2376w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_2592x.jpg?v=1709117519 2592w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_2808x.jpg?v=1709117519 2808w, //fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_3024x.jpg?v=1709117519 3024w">
+  </div>
+              <noscript>
+                <img src="//fashionpeople.store/cdn/shop/files/scotch---soda-camisa-de-manga-longa-176837_1_1024x.jpg?v=1709117519" alt="Camisa">
+              </noscript>
+            </div>
+          
+        </div>
+      </a></div>
+
+  
+    <div class="product-info">
+      <a class="fancybox.ajax product-modal" rel="nofollow" href="https://fashionpeople.store/products/camisa-152?view=quick">
+        Vista rápida
+      </a>
+    </div>
+  
+
+<div class="product-details">
+  <a href="https://fashionpeople.store/collections/scotch-soda/products/camisa-152">
+    <h3>Camisa</h3>
+    
+      <h4>Scotch &amp; Soda</h4>
+    
+  </a>
+
+  <div class="price">
+    
+      <div class="prod-price">
+        
+          <span class="money" data-currency-eur="€119,50" data-currency="EUR">€119,50</span>
+        
+      </div>
+    
+  </div>
+
+</div>
+
+          </div>
+        
+          <div class="product desktop-3 tablet-2 mobile-half mobile-half" id="prod-8781189349722" data-alpha="Camisa" data-price="13040">
+            <div class="ci">
+  
+    
+      
+    
+      
+    
+      
+    
+
+    
+
+  
+
+    
+      <a href="https://fashionpeople.store/collections/scotch-soda/products/camisa-151" title="Camisa">
+        <div class="reveal">
+          
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload-fade lazyautosizes lazyloaded" id="" data-sizes="auto" alt="Camisa" data-srcset="//fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_180x.jpg?v=1709117467 180w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_360x.jpg?v=1709117467 360w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_540x.jpg?v=1709117467 540w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_720x.jpg?v=1709117467 720w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_900x.jpg?v=1709117467 900w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_1080x.jpg?v=1709117467 1080w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_1296x.jpg?v=1709117467 1296w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_1512x.jpg?v=1709117467 1512w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_1728x.jpg?v=1709117467 1728w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_1944x.jpg?v=1709117467 1944w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_2160x.jpg?v=1709117467 2160w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_2376x.jpg?v=1709117467 2376w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_2592x.jpg?v=1709117467 2592w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_2808x.jpg?v=1709117467 2808w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_3024x.jpg?v=1709117467 3024w" sizes="275px" srcset="//fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_180x.jpg?v=1709117467 180w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_360x.jpg?v=1709117467 360w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_540x.jpg?v=1709117467 540w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_720x.jpg?v=1709117467 720w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_900x.jpg?v=1709117467 900w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_1080x.jpg?v=1709117467 1080w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_1296x.jpg?v=1709117467 1296w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_1512x.jpg?v=1709117467 1512w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_1728x.jpg?v=1709117467 1728w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_1944x.jpg?v=1709117467 1944w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_2160x.jpg?v=1709117467 2160w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_2376x.jpg?v=1709117467 2376w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_2592x.jpg?v=1709117467 2592w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_2808x.jpg?v=1709117467 2808w, //fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_3024x.jpg?v=1709117467 3024w">
+  </div>
+          <noscript>
+            <img src="//fashionpeople.store/cdn/shop/files/55_dcb24199-ea42-42b4-a6bb-7f0e5cf23db5_1024x.jpg?v=1709117467" alt="Camisa">
+          </noscript>
+
+          
+            <div class="hidden">
+              
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload-fade lazyautosizes lazyloaded" id="" data-sizes="auto" alt="Camisa" data-srcset="//fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_180x.jpg?v=1709117467 180w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_360x.jpg?v=1709117467 360w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_540x.jpg?v=1709117467 540w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_720x.jpg?v=1709117467 720w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_900x.jpg?v=1709117467 900w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_1080x.jpg?v=1709117467 1080w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_1296x.jpg?v=1709117467 1296w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_1512x.jpg?v=1709117467 1512w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_1728x.jpg?v=1709117467 1728w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_1944x.jpg?v=1709117467 1944w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_2160x.jpg?v=1709117467 2160w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_2376x.jpg?v=1709117467 2376w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_2592x.jpg?v=1709117467 2592w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_2808x.jpg?v=1709117467 2808w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_3024x.jpg?v=1709117467 3024w" sizes="275px" srcset="//fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_180x.jpg?v=1709117467 180w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_360x.jpg?v=1709117467 360w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_540x.jpg?v=1709117467 540w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_720x.jpg?v=1709117467 720w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_900x.jpg?v=1709117467 900w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_1080x.jpg?v=1709117467 1080w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_1296x.jpg?v=1709117467 1296w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_1512x.jpg?v=1709117467 1512w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_1728x.jpg?v=1709117467 1728w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_1944x.jpg?v=1709117467 1944w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_2160x.jpg?v=1709117467 2160w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_2376x.jpg?v=1709117467 2376w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_2592x.jpg?v=1709117467 2592w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_2808x.jpg?v=1709117467 2808w, //fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_3024x.jpg?v=1709117467 3024w">
+  </div>
+              <noscript>
+                <img src="//fashionpeople.store/cdn/shop/files/22_b6c6419f-d8d7-4960-89ef-5b6e9a8b8c2a_1024x.jpg?v=1709117467" alt="Camisa">
+              </noscript>
+            </div>
+          
+        </div>
+      </a></div>
+
+  
+    <div class="product-info">
+      <a class="fancybox.ajax product-modal" rel="nofollow" href="https://fashionpeople.store/products/camisa-151?view=quick">
+        Vista rápida
+      </a>
+    </div>
+  
+
+<div class="product-details">
+  <a href="https://fashionpeople.store/collections/scotch-soda/products/camisa-151">
+    <h3>Camisa</h3>
+    
+      <h4>Scotch &amp; Soda</h4>
+    
+  </a>
+
+  <div class="price">
+    
+      <div class="prod-price">
+        
+          <span class="money" data-currency-eur="€130,40" data-currency="EUR">€130,40</span>
+        
+      </div>
+    
+  </div>
+
+</div>
+
+          </div>
+        
+          <div class="product desktop-3 tablet-2 mobile-half mobile-half" id="prod-8781179879770" data-alpha="Cinto" data-price="7600">
+            <div class="ci">
+  
+    
+      
+    
+      
+    
+      
+    
+
+    
+
+  
+
+    
+      <a href="https://fashionpeople.store/collections/scotch-soda/products/cinto-16" title="Cinto">
+        <div class="reveal">
+          
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload-fade lazyautosizes lazyloaded" id="" data-sizes="auto" alt="Cinto" data-srcset="//fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_180x.jpg?v=1709117301 180w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_360x.jpg?v=1709117301 360w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_540x.jpg?v=1709117301 540w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_720x.jpg?v=1709117301 720w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_900x.jpg?v=1709117301 900w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_1080x.jpg?v=1709117301 1080w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_1296x.jpg?v=1709117301 1296w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_1512x.jpg?v=1709117301 1512w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_1728x.jpg?v=1709117301 1728w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_1944x.jpg?v=1709117301 1944w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_2160x.jpg?v=1709117301 2160w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_2376x.jpg?v=1709117301 2376w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_2592x.jpg?v=1709117301 2592w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_2808x.jpg?v=1709117301 2808w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_3024x.jpg?v=1709117301 3024w" sizes="275px" srcset="//fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_180x.jpg?v=1709117301 180w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_360x.jpg?v=1709117301 360w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_540x.jpg?v=1709117301 540w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_720x.jpg?v=1709117301 720w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_900x.jpg?v=1709117301 900w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_1080x.jpg?v=1709117301 1080w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_1296x.jpg?v=1709117301 1296w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_1512x.jpg?v=1709117301 1512w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_1728x.jpg?v=1709117301 1728w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_1944x.jpg?v=1709117301 1944w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_2160x.jpg?v=1709117301 2160w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_2376x.jpg?v=1709117301 2376w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_2592x.jpg?v=1709117301 2592w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_2808x.jpg?v=1709117301 2808w, //fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_3024x.jpg?v=1709117301 3024w">
+  </div>
+          <noscript>
+            <img src="//fashionpeople.store/cdn/shop/files/22_a5738e18-78f2-4f64-a74a-4fa331b12dee_1024x.jpg?v=1709117301" alt="Cinto">
+          </noscript>
+
+          
+            <div class="hidden">
+              
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload-fade lazyautosizes lazyloaded" id="" data-sizes="auto" alt="Cinto" data-srcset="//fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_180x.jpg?v=1709117300 180w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_360x.jpg?v=1709117300 360w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_540x.jpg?v=1709117300 540w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_720x.jpg?v=1709117300 720w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_900x.jpg?v=1709117300 900w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_1080x.jpg?v=1709117300 1080w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_1296x.jpg?v=1709117300 1296w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_1512x.jpg?v=1709117300 1512w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_1728x.jpg?v=1709117300 1728w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_1944x.jpg?v=1709117300 1944w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_2160x.jpg?v=1709117300 2160w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_2376x.jpg?v=1709117300 2376w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_2592x.jpg?v=1709117300 2592w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_2808x.jpg?v=1709117300 2808w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_3024x.jpg?v=1709117300 3024w" sizes="275px" srcset="//fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_180x.jpg?v=1709117300 180w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_360x.jpg?v=1709117300 360w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_540x.jpg?v=1709117300 540w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_720x.jpg?v=1709117300 720w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_900x.jpg?v=1709117300 900w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_1080x.jpg?v=1709117300 1080w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_1296x.jpg?v=1709117300 1296w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_1512x.jpg?v=1709117300 1512w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_1728x.jpg?v=1709117300 1728w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_1944x.jpg?v=1709117300 1944w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_2160x.jpg?v=1709117300 2160w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_2376x.jpg?v=1709117300 2376w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_2592x.jpg?v=1709117300 2592w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_2808x.jpg?v=1709117300 2808w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_3024x.jpg?v=1709117300 3024w">
+  </div>
+              <noscript>
+                <img src="//fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_f6d57f74-174a-4df1-8bbd-46cbf3454e4e_1024x.jpg?v=1709117300" alt="Cinto">
+              </noscript>
+            </div>
+          
+        </div>
+      </a></div>
+
+  
+    <div class="product-info">
+      <a class="fancybox.ajax product-modal" rel="nofollow" href="https://fashionpeople.store/products/cinto-16?view=quick">
+        Vista rápida
+      </a>
+    </div>
+  
+
+<div class="product-details">
+  <a href="https://fashionpeople.store/collections/scotch-soda/products/cinto-16">
+    <h3>Cinto</h3>
+    
+      <h4>Scotch &amp; Soda</h4>
+    
+  </a>
+
+  <div class="price">
+    
+      <div class="prod-price">
+        
+          <span class="money" data-currency-eur="€76,00" data-currency="EUR">€76,00</span>
+        
+      </div>
+    
+  </div>
+
+</div>
+
+          </div>
+        
+          <div class="product desktop-3 tablet-2 mobile-half mobile-half" id="prod-8781178896730" data-alpha="Sweat" data-price="10870">
+            <div class="ci">
+  
+    
+      
+    
+      
+    
+      
+    
+
+    
+
+  
+
+    
+      <a href="https://fashionpeople.store/collections/scotch-soda/products/sweat-132" title="Sweat">
+        <div class="reveal">
+          
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload-fade lazyautosizes lazyloaded" id="" data-sizes="auto" alt="Sweat" data-srcset="//fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_180x.jpg?v=1709117230 180w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_360x.jpg?v=1709117230 360w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_540x.jpg?v=1709117230 540w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_720x.jpg?v=1709117230 720w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_900x.jpg?v=1709117230 900w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_1080x.jpg?v=1709117230 1080w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_1296x.jpg?v=1709117230 1296w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_1512x.jpg?v=1709117230 1512w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_1728x.jpg?v=1709117230 1728w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_1944x.jpg?v=1709117230 1944w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_2160x.jpg?v=1709117230 2160w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_2376x.jpg?v=1709117230 2376w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_2592x.jpg?v=1709117230 2592w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_2808x.jpg?v=1709117230 2808w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_3024x.jpg?v=1709117230 3024w" sizes="275px" srcset="//fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_180x.jpg?v=1709117230 180w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_360x.jpg?v=1709117230 360w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_540x.jpg?v=1709117230 540w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_720x.jpg?v=1709117230 720w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_900x.jpg?v=1709117230 900w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_1080x.jpg?v=1709117230 1080w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_1296x.jpg?v=1709117230 1296w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_1512x.jpg?v=1709117230 1512w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_1728x.jpg?v=1709117230 1728w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_1944x.jpg?v=1709117230 1944w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_2160x.jpg?v=1709117230 2160w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_2376x.jpg?v=1709117230 2376w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_2592x.jpg?v=1709117230 2592w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_2808x.jpg?v=1709117230 2808w, //fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_3024x.jpg?v=1709117230 3024w">
+  </div>
+          <noscript>
+            <img src="//fashionpeople.store/cdn/shop/files/SemTitulo-1copiar_bb1056ad-f64f-4ed9-a9e2-550760d33fe6_1024x.jpg?v=1709117230" alt="Sweat">
+          </noscript>
+
+          
+            <div class="hidden">
+              
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload-fade lazyautosizes lazyloaded" id="" data-sizes="auto" alt="Sweat" data-srcset="//fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_180x.jpg?v=1709117230 180w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_360x.jpg?v=1709117230 360w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_540x.jpg?v=1709117230 540w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_720x.jpg?v=1709117230 720w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_900x.jpg?v=1709117230 900w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_1080x.jpg?v=1709117230 1080w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_1296x.jpg?v=1709117230 1296w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_1512x.jpg?v=1709117230 1512w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_1728x.jpg?v=1709117230 1728w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_1944x.jpg?v=1709117230 1944w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_2160x.jpg?v=1709117230 2160w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_2376x.jpg?v=1709117230 2376w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_2592x.jpg?v=1709117230 2592w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_2808x.jpg?v=1709117230 2808w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_3024x.jpg?v=1709117230 3024w" sizes="275px" srcset="//fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_180x.jpg?v=1709117230 180w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_360x.jpg?v=1709117230 360w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_540x.jpg?v=1709117230 540w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_720x.jpg?v=1709117230 720w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_900x.jpg?v=1709117230 900w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_1080x.jpg?v=1709117230 1080w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_1296x.jpg?v=1709117230 1296w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_1512x.jpg?v=1709117230 1512w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_1728x.jpg?v=1709117230 1728w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_1944x.jpg?v=1709117230 1944w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_2160x.jpg?v=1709117230 2160w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_2376x.jpg?v=1709117230 2376w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_2592x.jpg?v=1709117230 2592w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_2808x.jpg?v=1709117230 2808w, //fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_3024x.jpg?v=1709117230 3024w">
+  </div>
+              <noscript>
+                <img src="//fashionpeople.store/cdn/shop/files/22_abf6e3a0-b8b9-4822-82b4-0ecc82b99568_1024x.jpg?v=1709117230" alt="Sweat">
+              </noscript>
+            </div>
+          
+        </div>
+      </a></div>
+
+  
+    <div class="product-info">
+      <a class="fancybox.ajax product-modal" rel="nofollow" href="https://fashionpeople.store/products/sweat-132?view=quick">
+        Vista rápida
+      </a>
+    </div>
+  
+
+<div class="product-details">
+  <a href="https://fashionpeople.store/collections/scotch-soda/products/sweat-132">
+    <h3>Sweat</h3>
+    
+      <h4>Scotch &amp; Soda</h4>
+    
+  </a>
+
+  <div class="price">
+    
+      <div class="prod-price">
+        
+          <span class="money" data-currency-eur="€108,70" data-currency="EUR">€108,70</span>
+        
+      </div>
+    
+  </div>
+
+</div>
+
+          </div>
+        
+      </article>
+
+    
+
+    
+
+  </div>
+</section>
+<div class="clear"></div>
+
+<style>
+  section.homepage-featured-collection-1518209628906 {
+    background: #ffffff;
+  }
+  section.homepage-featured-collection-1518209628906 .section-title h2 {
+    border-color: #000000 !important;
+  }
+  section.homepage-featured-collection-1518209628906 .section-title h2,
+  section.homepage-featured-collection-1518209628906 .section-title h2 a,
+  section.homepage-featured-collection-1518209628906 .fr a {
+    color: #000000 !important;
+  }
+</style>
+
+
+</div><div id="shopify-section-1518209594527" class="shopify-section"><section class="homepage-gallery-1518209594527 index-section" data-section-id="1518209594527">
+  <article id="promo-images" class="row">
+
+    
+      
+
+      <div class="pimg homepage-promo desktop-4 tablet-2 mobile-3 promo-1518209594527-0">
+        <div class="promo-inner">
+          <a href="https://fashionpeople.store/collections/fred-perry">
+            
+              
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload lazyload-fade" id="" data-src="//fashionpeople.store/cdn/shop/files/fotterfredperry_{width}x.jpg?v=1650568212" data-sizes="auto" alt="">
+  </div>
+              <noscript>
+                <img src="//fashionpeople.store/cdn/shop/files/fotterfredperry_800x.jpg?v=1650568212" alt="">
+              </noscript>
+            
+            <div class="caption">
+              
+                <p>Fred Perry</p>
+              
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <style>
+        .homepage-promo.promo-1518209594527-0 .promo-inner p {
+          color: #ffffff;
+        }
+        /* IMAGE BLOCKS */
+        section.homepage-gallery-1518209594527 {
+          background-color: #ffffff;
+        }
+
+        section.homepage-gallery-1518209594527,
+        section.homepage-gallery-1518209594527 .caption p {
+          font-size: 28px;
+          font-weight: bold;
+        }
+
+      </style>
+    
+      
+
+      <div class="pimg homepage-promo desktop-4 tablet-2 mobile-3 promo-1518209594527-1">
+        <div class="promo-inner">
+          <a href="https://fashionpeople.store/collections/calvin-klein-jeans">
+            
+              
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload lazyload-fade" id="" data-src="//fashionpeople.store/cdn/shop/files/footercalvinklein_{width}x.jpg?v=1650569194" data-sizes="auto" alt="">
+  </div>
+              <noscript>
+                <img src="//fashionpeople.store/cdn/shop/files/footercalvinklein_800x.jpg?v=1650569194" alt="">
+              </noscript>
+            
+            <div class="caption">
+              
+                <p>Calvin Klein Jeans</p>
+              
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <style>
+        .homepage-promo.promo-1518209594527-1 .promo-inner p {
+          color: #ffffff;
+        }
+        /* IMAGE BLOCKS */
+        section.homepage-gallery-1518209594527 {
+          background-color: #ffffff;
+        }
+
+        section.homepage-gallery-1518209594527,
+        section.homepage-gallery-1518209594527 .caption p {
+          font-size: 28px;
+          font-weight: bold;
+        }
+
+      </style>
+    
+      
+
+      <div class="pimg homepage-promo desktop-4 tablet-2 mobile-3 promo-1518209594527-2">
+        <div class="promo-inner">
+          <a href="https://fashionpeople.store/collections/hugo-boss">
+            
+              
+  
+<div class="box-ratio" style="padding-bottom: 100.0%;">
+    <img class="lazyload lazyload-fade" id="" data-src="//fashionpeople.store/cdn/shop/files/footerhugoboss1_41ff9f2e-94e3-4da8-bb2e-0e9512254c65_{width}x.jpg?v=1650569623" data-sizes="auto" alt="">
+  </div>
+              <noscript>
+                <img src="//fashionpeople.store/cdn/shop/files/footerhugoboss1_41ff9f2e-94e3-4da8-bb2e-0e9512254c65_800x.jpg?v=1650569623" alt="">
+              </noscript>
+            
+            <div class="caption">
+              
+                <p>Hugo Boss</p>
+              
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <style>
+        .homepage-promo.promo-1518209594527-2 .promo-inner p {
+          color: #ffffff;
+        }
+        /* IMAGE BLOCKS */
+        section.homepage-gallery-1518209594527 {
+          background-color: #ffffff;
+        }
+
+        section.homepage-gallery-1518209594527,
+        section.homepage-gallery-1518209594527 .caption p {
+          font-size: 28px;
+          font-weight: bold;
+        }
+
+      </style>
+    
+    
+  </article>
+</section>
+
+
+
+
+</div><div id="shopify-section-1478800447615" class="shopify-section">
+
+<section class="parallax-1478800447615 index-section parallax parallax-window lazyloaded" data-section-type="parallax-section" data-bgset="
+  
+    //fashionpeople.store/cdn/shop/files/SLIDER-4_180x.jpg?v=1613684145 180w 91h,
+  
+  
+    //fashionpeople.store/cdn/shop/files/SLIDER-4_360x.jpg?v=1613684145 360w 182h,
+  
+  
+    //fashionpeople.store/cdn/shop/files/SLIDER-4_540x.jpg?v=1613684145 540w 273h,
+  
+  
+    //fashionpeople.store/cdn/shop/files/SLIDER-4_720x.jpg?v=1613684145 720w 364h,
+  
+  
+    //fashionpeople.store/cdn/shop/files/SLIDER-4_900x.jpg?v=1613684145 900w 455h,
+  
+  
+    //fashionpeople.store/cdn/shop/files/SLIDER-4_1080x.jpg?v=1613684145 1080w 546h,
+  
+  
+    //fashionpeople.store/cdn/shop/files/SLIDER-4_1296x.jpg?v=1613684145 1296w 656h,
+  
+  
+    //fashionpeople.store/cdn/shop/files/SLIDER-4_1512x.jpg?v=1613684145 1512w 765h,
+  
+  
+
+  //fashionpeople.store/cdn/shop/files/SLIDER-4.jpg?v=1613684145 1680w 850h
+
+
+" data-section-id="1478800447615" style="background-image: url(&quot;https://fashionpeople.store/cdn/shop/files/SLIDER-4.jpg?v=1613684145&quot;);">
+
+  <article class="row">
+    <div class="parallax-content desktop-12 tablet-6 mobile-3">
+
+      <div class="parallax-text">
+        
+          <h2>Nova coleção SS'22</h2>
+        
+<p>A melhor forma de dar as boas vindas a Primavera é descobrir todas as novidades boas que ele nos traz.</p>
+      </div>
+
+      
+    </div>
+  </article>
+
+<picture style="display: none;"><source data-srcset=" //fashionpeople.store/cdn/shop/files/SLIDER-4_180x.jpg?v=1613684145 180w 91h, //fashionpeople.store/cdn/shop/files/SLIDER-4_360x.jpg?v=1613684145 360w 182h, //fashionpeople.store/cdn/shop/files/SLIDER-4_540x.jpg?v=1613684145 540w 273h, //fashionpeople.store/cdn/shop/files/SLIDER-4_720x.jpg?v=1613684145 720w 364h, //fashionpeople.store/cdn/shop/files/SLIDER-4_900x.jpg?v=1613684145 900w 455h, //fashionpeople.store/cdn/shop/files/SLIDER-4_1080x.jpg?v=1613684145 1080w 546h, //fashionpeople.store/cdn/shop/files/SLIDER-4_1296x.jpg?v=1613684145 1296w 656h, //fashionpeople.store/cdn/shop/files/SLIDER-4_1512x.jpg?v=1613684145 1512w 765h, //fashionpeople.store/cdn/shop/files/SLIDER-4.jpg?v=1613684145 1680w 850h " sizes="1903px" srcset=" //fashionpeople.store/cdn/shop/files/SLIDER-4_180x.jpg?v=1613684145 180w 91h, //fashionpeople.store/cdn/shop/files/SLIDER-4_360x.jpg?v=1613684145 360w 182h, //fashionpeople.store/cdn/shop/files/SLIDER-4_540x.jpg?v=1613684145 540w 273h, //fashionpeople.store/cdn/shop/files/SLIDER-4_720x.jpg?v=1613684145 720w 364h, //fashionpeople.store/cdn/shop/files/SLIDER-4_900x.jpg?v=1613684145 900w 455h, //fashionpeople.store/cdn/shop/files/SLIDER-4_1080x.jpg?v=1613684145 1080w 546h, //fashionpeople.store/cdn/shop/files/SLIDER-4_1296x.jpg?v=1613684145 1296w 656h, //fashionpeople.store/cdn/shop/files/SLIDER-4_1512x.jpg?v=1613684145 1512w 765h, //fashionpeople.store/cdn/shop/files/SLIDER-4.jpg?v=1613684145 1680w 850h "><img alt="" class="lazyautosizes lazyloaded" data-sizes="auto" sizes="1903px"></picture></section>
+
+<div class="clear"></div>
+
+
+
+<style>
+  .parallax-1478800447615 article {
+    display: table;
+    height: 500px;
+    min-height: 500px;
+  }
+  .parallax-1478800447615 .parallax-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    display: inline-block;
+  }
+  @media screen and (max-width: 500px) {
+    .parallax-1478800447615 .parallax-text h2 {
+      font-size: 16px;
+    }
+  }
+  section.parallax-1478800447615 .parallax-text h2, section.parallax-1478800447615 .parallax-text a h2, section.parallax-1478800447615 .parallax-text a:visited h2 {
+    color: #ffffff;
+  }
+  section.parallax-1478800447615 .parallax-text a:hover h2 {
+    opacity: 0.8;
+  }
+  .parallax-1478800447615 .parallax-text p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    max-width: 60%;
+    margin: auto;
+  }
+  @media screen and (max-width: 500px) {
+    .parallax-1478800447615 .parallax-text p {
+      font-size: 14px;
+    }
+  }
+  .parallax-1478800447615 .parallax-text a.button, .parallax-1478800447615 .parallax-text a.button:visited {
+    background: #000000;
+    color: #ffffff;
+  }
+  .parallax-text a.button:hover {
+    opacity: 0.8;
+  }
+  .no-js .parallax-1478800447615 {
+    background-image: url('//fashionpeople.store/cdn/shop/files/SLIDER-4_1024x.jpg?v=1613684145');
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+  }
+  @media screen and ( min-width: 1220px ) {
+    section.parallax-1478800447615 {
+      background-size: 100% !important;
+    }
+  }
+  @media screen and ( max-width: 1024px ) {
+    .parallax-1478800447615 {
+      background-attachment: scroll !important;
+      background-size: cover !important;
+    }
+  }
+  @media screen and ( max-width: 740px ) {
+    section.parallax-1478800447615 article {
+      height: initial;
+      min-height: 200px;
+    }
+  }
+
+</style>
+
+
+
+</div><div id="shopify-section-1478800534081" class="shopify-section"><script id="instagram-template" type="text/template">
+  
+    <div class="desktop-2 tablet-1 mobile-1 contained">
+      <a class="instagram-image-container" target="_blank" href="{{link}}" rel="ig" title="{{caption}}">
+        <img class="instagram-image" src="{{image}}" />
+      </a>
+    </div>
+  
+</script>
+<section class="index-section homepage-instagram" data-section-id="1478800534081" data-section-type="instagram">
+  
+  
+  
+  <article>
+    
+      <div class="section-title row">
+        <h2><a href="https://instagram.com/fashionpeople_10/">Segue-nos no Instagram</a></h2>
+      </div>
+    
+    <div class="gridlock-fluid">
+      <div class="row">
+        <div class="row">
+          
+          
+          <div class="clear"></div>
+          <div id="instagram-feed">
+            
+            <div id="instafeed-1478800534081" data-access-token="2334325955.5ea0515.3566f83e90494c9c8781156ff06e864a"></div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+<style>
+  /* INSTAGRAM */
+  section.homepage-instagram {
+    background: #ffffff;
+  }
+  section.homepage-instagram h2,
+  section.homepage-instagram h2 a {
+    color: #000000 !important;
+  }
+  .instagram-image-container {
+    display: block;
+    height: 0;
+    padding-bottom: 100%;
+    overflow: hidden;
+    margin-bottom: 0px;
+  }
+</style>
+
+</div><!-- END content_for_index -->
+</div>
+
+<div class="load-wait hide">
+  <i class="fa fa-spinner" aria-hidden="true"></i>
+</div>
+
+      
+    </div>
+    <div id="shopify-section-footer" class="shopify-section"><footer data-section-id="footer">
+  <div id="footer-wrapper">
+    <div id="footer" class="row">
+
+
+    
+
+      
+      
+      <div class="desktop-4 tablet-3 mobile-3">
+        <h4>Informação</h4>
+        <ul>
+          
+            <li><a href="https://fashionpeople.store/search" title="">Pesquisar</a></li>
+          
+            <li><a href="https://fashionpeople.store/policies/terms-of-service" title="">Termos e Condições</a></li>
+          
+            <li><a href="https://fashionpeople.store/policies/privacy-policy" title="">Política de Privacidade</a></li>
+          
+            <li><a href="https://fashionpeople.store/policies/refund-policy" title="">Devoluções</a></li>
+          
+            <li><a href="https://fashionpeople.store/policies/shipping-policy" title="">Envios</a></li>
+          
+            <li><a href="https://fashionpeople.store/pages/sobre-nos" title="">Sobre nós</a></li>
+          
+        </ul>
+      </div>
+      
+      
+      
+      <div class="desktop-4 tablet-3 mobile-3">
+        <h4>Compra segura</h4>
+        <div class="rte"><p>A Fashion People conta com uma equipa dedicada exclusivamente às vendas online para que possa tirar todas as dúvidas sobre as suas compras.</p></div>
+      </div>
+      
+      
+      
+      <div class="desktop-4 tablet-3 mobile-3">
+        <h4>Ligue-se a nós</h4>
+        <p>Subscreve a nossa newsletter e fica a par das novidades.</p>
+        <div id="footer_signup">
+          <p></p>
+            <form method="post" action="https://fashionpeople.store/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓">
+            
+            
+            <input type="hidden" name="contact[tags]" value="prospect, password page">
+            <input type="email" name="contact[email]" id="footer-EMAIL" placeholder="Junte-se à nossa newsletter">
+            <input type="submit" id="footer-subscribe" value="Subscrever">
+            
+            </form>
+        </div>
+      </div>
+      
+      
+
+      <div class="clear"></div>
+      <ul id="footer-icons" class="desktop-12 tablet-6 mobile-3">
+        
+          <li>
+            <a href="https://www.facebook.com/5fashionpeople/" target="_blank">
+              <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+        
+          <li>
+            <a href="https://instagram.com/fashionpeople_10/" target="_blank">
+              <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+      <div class="clear"></div>
+      <div class="credit desktop-12 tablet-6 mobile-3">
+
+        <div id="payment">
+          
+            
+
+              <svg class="payment-icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-paypal"><title id="pi-paypal">PayPal</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"></path><path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"></path><path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"></path></svg>
+            
+              <svg class="payment-icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-visa"><title id="pi-visa">Visa</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"></path></svg>
+            
+              <svg class="payment-icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-master"><title id="pi-master">Mastercard</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><circle fill="#EB001B" cx="15" cy="12" r="7"></circle><circle fill="#F79E1B" cx="23" cy="12" r="7"></circle><path fill="#FF5F00" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"></path></svg>
+            
+              <svg class="payment-icon" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pi-american_express" viewBox="0 0 38 24" width="38" height="24"><title id="pi-american_express">American Express</title><path fill="#000" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3Z" opacity=".07"></path><path fill="#006FCF" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32Z"></path><path fill="#FFF" d="M22.012 19.936v-8.421L37 11.528v2.326l-1.732 1.852L37 17.573v2.375h-2.766l-1.47-1.622-1.46 1.628-9.292-.02Z"></path><path fill="#006FCF" d="M23.013 19.012v-6.57h5.572v1.513h-3.768v1.028h3.678v1.488h-3.678v1.01h3.768v1.531h-5.572Z"></path><path fill="#006FCF" d="m28.557 19.012 3.083-3.289-3.083-3.282h2.386l1.884 2.083 1.89-2.082H37v.051l-3.017 3.23L37 18.92v.093h-2.307l-1.917-2.103-1.898 2.104h-2.321Z"></path><path fill="#FFF" d="M22.71 4.04h3.614l1.269 2.881V4.04h4.46l.77 2.159.771-2.159H37v8.421H19l3.71-8.421Z"></path><path fill="#006FCF" d="m23.395 4.955-2.916 6.566h2l.55-1.315h2.98l.55 1.315h2.05l-2.904-6.566h-2.31Zm.25 3.777.875-2.09.873 2.09h-1.748Z"></path><path fill="#006FCF" d="M28.581 11.52V4.953l2.811.01L32.84 9l1.456-4.046H37v6.565l-1.74.016v-4.51l-1.644 4.494h-1.59L30.35 7.01v4.51h-1.768Z"></path></svg>
+
+            
+          
+        </div>
+
+        <p>
+          
+          <a href="https://fashionpeople.store/#" target="_blank" title="Shopify theme">FASHION PEOPLE - TODOS OS DIREITOS RESERVADOS</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  #footer-wrapper {
+    text-align: left;
+  }
+
+  #footer-wrapper h4 {
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+</style>
+
+
+</div>
+    
+  <script type="text/javascript">
+    if($(window).width() > 500){
+      // Fancybox Join our mailing list popup
+      $(document).ready(function(){
+
+        var check_cookie = $.cookie('mailing_list_delay_popup');
+        if(check_cookie == null){
+          $.cookie('mailing_list_delay_popup', 'expires_seven_days', { expires: 7 });
+          //fire your fancybox here
+          setTimeout(function(){
+            $.fancybox({
+              href: "#subscribe_popup"
+            });
+          }, 3000);
+        }
+      });
+    };
+
+  </script>
+
+
+<div style="display:none">
+  <div class="fancybox-placeholder" style="display: none;"></div>
+</div>
+
+    <div style="display:none">
+      <div id="search_popup" style="padding:30px;">
+        <!-- BEGIN #subs-container -->
+        <div id="subs-container" class="clearfix">
+          <div id="search">
+            <form action="https://fashionpeople.store/search" method="get">
+              <input type="text" name="q" id="q" placeholder="Palavras a pesquisar">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="shopify-section-mobile-navigation" class="shopify-section"><nav class="shifter-navigation fancybox-margin" data-section-id="mobile-navigation" data-section-type="mobile-navigation">
+  <div class="search">
+    <form role="search" action="https://fashionpeople.store/search" method="get">
+      <input type="text" name="q" id="q" placeholder="Palavras a pesquisar">
+    </form>
+  </div>
+  <ul id="accordion" role="navigation">
+    
+      
+        <li>
+          <a href="https://fashionpeople.store/">
+            Início
+          </a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="https://fashionpeople.store/collections/novidades">
+            Novidades
+          </a>
+        </li>
+      
+    
+      
+        <li class="accordion-toggle" aria-haspopup="true" aria-expanded="false">
+          <a href="https://fashionpeople.store/">
+            Marcas
+          </a>
+        </li>
+
+        <div class="accordion-content">
+          <ul class="sub">
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/calvin-klein-jeans">
+                    Calvin Klein Jeans
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/diesel">
+                    Diesel
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/fred-perry">
+                    Fred Perry
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/hugo-boss">
+                    Hugo Boss
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/iceberg">
+                    Iceberg
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/just-cavalli">
+                    Just Cavalli
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/p448">
+                    P448
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/lacoste">
+                    Lacoste
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/levis">
+                    Levi's
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/liu-jo">
+                    Liu Jo
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/new-balance">
+                    New Balance
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/scotch-soda">
+                    Scotch &amp; Soda
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/versace-jeans/Versace-Jeans">
+                    Versace Jeans
+                  </a>
+                </li>
+              
+            
+          </ul>
+        </div>
+      
+    
+      
+        <li class="accordion-toggle" aria-haspopup="true" aria-expanded="false">
+          <a href="https://fashionpeople.store/collections/all">
+            Produtos
+          </a>
+        </li>
+
+        <div class="accordion-content">
+          <ul class="sub">
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/t-shirts">
+                    T-shirts
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/polos">
+                    Polos
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/camisolas">
+                    Camisolas
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/sweats">
+                    Sweats
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/camisas">
+                    Camisas
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/casacos">
+                    Casacos
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/calcas">
+                    Calças
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/calcoes">
+                    Calções
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/sapatos">
+                    Ténis
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://fashionpeople.store/collections/acessorios">
+                    Acessórios
+                  </a>
+                </li>
+              
+            
+          </ul>
+        </div>
+      
+    
+      
+        <li>
+          <a href="https://fashionpeople.store/pages/sobre-nos">
+            Sobre nós
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+</div>
+
+  <a href="https://fashionpeople.store/#" class="scrollup fancybox-margin"><i class="fa fa-chevron-up" aria-hidden="true"></i> TOP</a>
+  <!-- Begin Recently Viewed Products -->
+  <script type="text/javascript" charset="utf-8">
+    //<![CDATA[
+    // Including api.jquery.js conditionnally.
+    if (typeof Shopify.resizeImage === 'undefined') {
+      document.write("\u003cscript src=\"\/\/fashionpeople.store\/cdn\/shopifycloud\/shopify\/assets\/themes_support\/api.jquery-b0af070cfe3f5cf7c92f9e2a5da2665ee07ed2aad63bb408f8d6672f894a5996.js\" type=\"text\/javascript\"\u003e\u003c\/script\u003e");
+    }
+    //]]>
+  </script><script src="./index_files/api.jquery-b0af070cfe3f5cf7c92f9e2a5da2665ee07ed2aad63bb408f8d6672f894a5996.js.transferir" type="text/javascript"></script><div tabindex="-1" aria-hidden="true" id="web-pixels-manager-sandbox-container" data-shopify-privacy="exclude" style="height: 0px !important; width: 0px !important; position: fixed !important; visibility: hidden !important; overflow: hidden !important; z-index: -100 !important; margin: 0px !important; padding: 0px !important; border: 0px !important;" class="fancybox-margin"><iframe tabindex="-1" aria-hidden="true" name="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-5d08cde3w4f259957pd2db89ecm09d01778" src="./index_files/saved_resource.html" id="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-5d08cde3w4f259957pd2db89ecm09d01778" sandbox="allow-scripts allow-forms" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"></iframe></div>
+  <script src="./index_files/jquery.tmpl.min.js.transferir" type="text/javascript"></script>
+  <script src="./index_files/jquery.products.min.js.transferir" type="text/javascript"></script>
+
+  <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=127142210767229";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  
+    <script src="./index_files/handlebars.min.js.transferir" type="text/javascript"></script>
+    <!-- /snippets/ajax-cart-template.liquid -->
+
+  <script id="CartTemplate" type="text/template">
+
+  
+    <form action="/cart" method="post" novalidate class="cart ajaxcart">
+      <div class="ajaxcart__inner">
+        {{#items}}
+        <div class="ajaxcart__product">
+          <div class="ajaxcart row" data-line="{{line}}">
+
+              <div class="grid__item desktop-4 tablet-2 mobile-1">
+                <a href="{{url}}" class="ajaxcart__product-image"><img src="{{img}}" alt=""></a>
+              </div>
+              <div class="desktop-8 tablet-4 mobile-2">
+                <p>
+                  <a href="{{url}}" class="ajaxcart__product-name">{{name}}</a>
+                  {{#if variation}}
+                    <span class="ajaxcart__product-meta">{{variation}}</span>
+                  {{/if}}
+                  {{#properties}}
+                    {{#each this}}
+                      {{#if this}}
+                        <span class="ajaxcart__product-meta">{{@key}}: {{this}}</span>
+                      {{/if}}
+                    {{/each}}
+                  {{/properties}}
+                  
+                </p>
+                <p><strong><span class="money">{{{price}}}</span></strong></p>
+
+                <div class="display-table">
+                  <div class="display-table-cell">
+                    <div class="ajaxcart__qty">
+                      <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--minus quantity-increment" data-id="{{id}}" data-qty="{{itemMinus}}" data-line="{{line}}">
+                        <span>&minus;</span>
+                      </button>
+                      <input type="text" name="updates[]" class="ajaxcart__qty-num" value="{{itemQty}}" min="0" data-id="{{id}}" data-line="{{line}}" aria-label="quantity" pattern="[0-9]*">
+                      <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--plus quantity-increment" data-id="{{id}}" data-line="{{line}}" data-qty="{{itemAdd}}">
+                        <span>+</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+        </div>
+        {{/items}}
+
+        
+      </div>
+      <div class="ajaxcart__footer row">
+
+          <div class="desktop-half tablet-half mobile-half">
+            <p><strong>Subtotal</strong></p>
+          </div>
+          <div class="desktop-half tablet-half mobile-half">
+            <p class="text-right"><strong><span class="money">{{{totalPrice}}}</span></strong></p>
+          </div>
+
+        <p class="text-center">Preços de envio calculados no check out</p>
+        <button type="submit" class="cart__checkout" name="checkout">
+          Check Out &rarr;
+        </button>
+        
+          <div class="additional_checkout_buttons"><div class="dynamic-checkout__content" id="dynamic-checkout-cart" data-shopify="dynamic-checkout-cart"></div></div>
+        
+      </div>
+    </form>
+  
+  </script>
+  <script id="AjaxQty" type="text/template">
+  
+    <div class="ajaxcart__qty">
+      <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--minus icon-fallback-text" data-id="{{id}}" data-qty="{{itemMinus}}">
+        <span class="icon icon-minus" aria-hidden="true"></span>
+        <span class="fallback-text">&minus;</span>
+      </button>
+      <input type="text" class="ajaxcart__qty-num" value="{{itemQty}}" min="0" data-id="{{id}}" aria-label="quantity" pattern="[0-9]*">
+      <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--plus icon-fallback-text" data-id="{{id}}" data-qty="{{itemAdd}}">
+        <span class="icon icon-plus" aria-hidden="true"></span>
+        <span class="fallback-text">+</span>
+      </button>
+    </div>
+  
+  </script>
+  <script id="JsQty" type="text/template">
+  
+    <div class="js-qty">
+      <button type="button" class="js-qty__adjust js-qty__adjust--minus quantity-increment" data-id="{{id}}" data-qty="{{itemMinus}}">
+        <span>&minus;</span>
+      </button>
+      <input type="text" class="js-qty__num" value="{{itemQty}}" min="1" data-id="{{id}}" aria-label="quantity" pattern="[0-9]*" name="{{inputName}}" id="{{inputId}}">
+      <button type="button" class="js-qty__adjust js-qty__adjust--plus quantity-increment" data-id="{{id}}" data-qty="{{itemAdd}}">
+        <span>+</span>
+      </button>
+    </div>
+  
+  </script>
+
+    <script src="./index_files/ajax-cart.js.transferir" type="text/javascript"></script>
+    <script>
+      jQuery(function($) {
+        ajaxCart.init({
+          formSelector: '[data-product-form]',
+          cartContainer: '#CartContainer',
+          addToCartSelector: '#AddToCart',
+          cartCountSelector: '.CartCount',
+          moneyFormat: "€{{amount_with_comma_separator}}"
+       });
+      });
+      jQuery('body').on('ajaxCart.afterCartLoad', function(evt, cart) {
+        // Bind to 'ajaxCart.afterCartLoad' to run any javascript after the cart has loaded in the DOM
+        timber.RightDrawer.open();
+      });
+      
+        jQuery('body').on('ajaxCart.afterCartLoad', function(evt, cart) {
+          // Convert currency when ajaxcart opens
+          Currency.convertAll(shopCurrency, Currency.currentCurrency);
+        });
+      
+    </script>
+  
+
+  <script>
+    function loadJS(u) {
+        var r = document.getElementsByTagName("script")[0],
+            s = document.createElement("script");
+        s.src = u;
+        r.parentNode.insertBefore(s, r);
+    }
+
+    if (!window.HTMLPictureElement) {
+    loadJS("https://afarkas.github.io/lazysizes/plugins/respimg/ls.respimg.min.js");
+    }
+  </script>
+
+  <!-- Responsive Images -->
+  <script src="./index_files/ls.rias.min.js.transferir" type="text/javascript"></script>
+  <script src="./index_files/ls.bgset.min.js.transferir" type="text/javascript"></script>
+  <script src="./index_files/lazysizes.min.js.transferir" type="text/javascript"></script>
+
+  <script>
+      document.documentElement.className =
+         document.documentElement.className.replace("no-js","js");
+  </script>
+
+
+<div class="fancybox-overlay fancybox-overlay-fixed" style="width: auto; height: auto; display: block;"><div class="fancybox-wrap fancybox-desktop fancybox-type-inline fancybox-opened" tabindex="-1" style="width: 842px; height: auto; position: absolute; top: 310px; left: 530px; opacity: 1; overflow: visible;"><div class="fancybox-skin" style="padding: 20px; width: auto; height: auto;"><div class="fancybox-outer"><div class="fancybox-inner" style="overflow: auto; width: 800px; height: auto;"><div id="subscribe_popup" class="row">
+    <div class="left fifty">
+      
+<p><img src="./index_files/tshirts_600x.jpg"></p>
+      
+    </div>
+
+
+    <div class="right fifty">
+      <h3>Olá!</h3>
+      <p>Insira o seu email</p>
+      <!-- BEGIN #subs-container -->
+      <div id="subs-container" class="clearfix">
+        <div id="mc_embed_signup">
+          <form method="post" action="https://fashionpeople.store/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓">
+            
+            
+              <input type="hidden" name="contact[tags]" value="prospect, password page">
+              <input type="email" name="contact[email]" id="mce-EMAIL" placeholder="Junte-se à nossa newsletter">
+              <input type="submit" id="mc-embedded-subscribe" value="Subscrever">
+            
+          </form>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <ul id="footer-icons">
+        
+          <li>
+            <a href="https://www.facebook.com/5fashionpeople/" target="_blank">
+              <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+        
+          <li>
+            <a href="https://instagram.com/fashionpeople_10/" target="_blank">
+              <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+  </div></div></div><a title="Close" class="fancybox-item fancybox-close" href="javascript:;"></a></div></div></div></body></html>
